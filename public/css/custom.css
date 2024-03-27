@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0 auto;
+}
+body {
+  font-family: 'DM Sans', sans-serif;
+  text-align: justify;
+  overflow-x: hidden;
+  font-size: 16pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+nav {
+  background-color: #000000 !important;
+}
+.nav-link {
+  justify-content: end;
+}
+.nav-item{
+  padding: 15px;
+}
+header {
+  background-color: #000000;
+  max-width: 100%;
+  /* opacity: 0.91; */
+  height: 97vh;
+}
+section{
+  margin-top: 150px;
+  margin-bottom: 150px;
+  max-width: 1096px;
+}
+/* logo inicial */
+.section-logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.container-2{
+  margin-top: 75px;
+  margin-bottom: 75px;
+}
+.imagem1{
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+.imagem2{
+  max-width: 100%;
+}
+.imagem3{
+  max-width: 100%;
+}
+/*vantagens*/
+.card-vantagens {
+  background-color: #f4f4f4;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border: none;
+  height: 250px; /* Altura fixa para todos os cards */
+}
+/*depoimentos*/
+.titulo-depoimentos{
+  color: #f4f4f4;
+}
+.depoimentos {
+  background-color: #000000 !important;
+  width: 100%; /* Define a largura da seção de depoimentos como 100% */
+  margin-left: auto; /* Alinha a seção de depoimentos à esquerda */
+  margin-right: auto; /* Alinha a seção de depoimentos à direita */
+}
+.card-depoimentos{
+  background-color: #222629;
+  padding: 40px;
+}
+/*professor*/
+.card-professor{
+  background-color: #222629;
+  padding: 60px;
+}
+
+.newsletter {
+  background-color: #222629; /* Cor de fundo da div newsletter */
+  padding: 20px; /* Espaçamento interno */
+  border-radius: 5px; /* Borda arredondada */
+  color: #ffffff; /* Cor do texto do botão */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+  text-align: center; /* Centraliza o conteúdo horizontalmente */
+}
+
+.btn-danger {
+  background-color: #dc3545; /* Cor de fundo do botão vermelho */
+  color: #ffffff; /* Cor do texto do botão */
+  border: none; /* Remove a borda */
+  margin-top: 10px; /* Adiciona um espaçamento superior para separar o botão do parágrafo */
+}
+
+.btn-danger:hover {
+  background-color: #c82333; /* Cor de fundo do botão vermelho ao passar o mouse */
+}
+.footer {
+  background-color: #333; /* Cor de fundo do footer */
+  color: #fff; /* Cor do texto */
+  padding: 50px 0; /* Espaçamento interno */
+}
+
+.footer-logo {
+  width: 100px; /* Largura do logo */
+}
+
+.footer h5 {
+  color: #fff; /* Cor do título */
+  font-size: 1.2rem; /* Tamanho da fonte do título */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.footer ul {
+  list-style: none; /* Remove as bolinhas da lista */
+  padding: 0; /* Remove o espaçamento interno */
+}
+
+.footer ul li {
+  margin-bottom: 10px; /* Espaçamento inferior entre os itens da lista */
+}
+
+.footer ul li a {
+  color: #fff; /* Cor do link */
+  text-decoration: none; /* Remove o sublinhado */
+}
+
+.footer ul li a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre o link */
+}
+
+.section-logo-footer{
+  width: 50%;
+}
