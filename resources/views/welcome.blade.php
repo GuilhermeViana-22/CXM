@@ -92,7 +92,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex flex-column justify-content-center align-items-left h-100">
-                            <h2>Acompanhamento Personalizado </h2>
+                            <h2><b>Acompanhamento Personalizado </b></h2>
                             <div class="d-flex justify-content-between">
                                 <ul class="list-unstyled">
                                     <li class="d-flex">
