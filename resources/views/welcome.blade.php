@@ -105,9 +105,21 @@
                         <figure class="imagem1">
                             <img class="imagem1" src="{{ asset('arquivos/imagens/logo.png') }}" alt="cxm">
                         </figure>
+                        <li class="d-flex">
+                            <i class="fas fa-check"></i>
+                            <span>Feedback Preciso e Contínuo</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-check"></i>
+                            <span>Personalização do Plano de Estudos</span>
+                        </li>
+                        <li class="d-flex">
+                            <i class="fas fa-check"></i>
+                            <span>Acompanhamento do Progresso em Tempo Real</span>
+                        </li>
                     </div>
                     <div class="col-md-6">
-                        <figure class="imagem2">
+                        <figure class="classe-imagem2">
                             <img class="imagem2" src="{{ asset('arquivos/imagens/banner.jpeg') }}" alt="cxm">
                         </figure>
                     </div>

@@ -52,6 +52,9 @@ section{
   margin-right: auto;
   display: block;
 }
+.classe-imagem2{
+  background-color: #282525;
+}
 .imagem2{
   max-width: 100%;
 }
@@ -60,12 +63,15 @@ section{
 }
 /*vantagens*/
 .card-vantagens {
-  background-color: #f4f4f4;
+  background-color: #d0cfcf;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   border: none;
   height: 250px; /* Altura fixa para todos os cards */
+}
+.card-vantagens:hover{
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.643);
 }
 /*depoimentos*/
 .titulo-depoimentos{
@@ -87,6 +93,15 @@ section{
   padding: 60px;
 }
 
+.fas{
+  background-color: #d5d5d5;
+  padding: 10px;
+  color: #dc3545; 
+  font-weight: bold;
+  border-radius: 100%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
 .newsletter {
   background-color: #222629; /* Cor de fundo da div newsletter */
   padding: 20px; /* Espaçamento interno */
