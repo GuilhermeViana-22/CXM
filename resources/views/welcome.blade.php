@@ -4,11 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Laravel</title>
+    <link rel="icon" href="{{ asset('arquivos/imagens/logo.png') }}">
+    <title>CXM - Cursos de idiomas</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
     <link href="{{ asset('site/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 
 <body class="antialiased">
@@ -47,13 +49,14 @@
 
         </div>
     </header>
+    <span><a href="https://api.whatsapp.com/send?phone=5511980439535" id="whatsapp-button"><i id="whatsapp" class="fab fa-whatsapp"></i></a></span>
     <main>
         {{-- explicação dos tipos de intro  --}}
         <section class="intro">
             <figure class="logo">
-                <img class="section-logo" src="{{ asset('arquivos/imagens/logo.png') }}" alt="cxm">
+                <img class="section-logo animate__animated animate__jello   " src="{{ asset('arquivos/imagens/logo.png') }}" alt="cxm">
             </figure>
-            <h1><strong>Tudo que vocẽ precisa em um só lugar</strong></h1>
+            <h1><strong>Tudo que você precisa em um só lugar</strong></h1>
             <p>Você está pronto para uma jornada de aprendizado de inglês como nunca antes? Prepare-se para explorar um
                 mundo de conteúdo exclusivo e de alta qualidade, projetado especialmente para você pela CXM!</p>
             <p>Com a CXM, você terá acesso a uma vasta gama de recursos educacionais, desde lições interativas até
@@ -70,7 +73,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="{{ asset('arquivos/imagens/online.jpg') }}" class="img-fluid" alt="Imagem de exemplo">
+                        <img src="{{ asset('arquivos/imagens/online.jpg') }}" class="img-fluid animate__bounce" alt="Imagem de exemplo">
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex flex-column justify-content-center align-items-left h-100">
@@ -259,7 +262,7 @@
                     <div class="form-group">
                         <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
                     </div>
-                    <button type="submit" class="btn btn-danger">Enviar</button>
+                    <button type="submit" class="btn btn-danger">   <i class="fas fa-paper-plane"></i>  Enviar</button>
                 </form>
             </div>
         </section>

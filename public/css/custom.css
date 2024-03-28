@@ -143,3 +143,33 @@ section{
 .section-logo-footer{
   width: 50%;
 }
+
+/*whatsaap button style*/
+
+#whatsapp-button {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  z-index: 99;
+  background-color: #b90d0d;
+  border-radius: 50px;
+  color: #ffffff;
+  text-decoration: none;
+  width: calc(60px + 6px); /* Aumenta 10% do width atual */
+  height: calc(60px + 6px); /* Aumenta 10% do height atual */
+  font-size: calc(40px + 4px); /* Aumenta 10% do font-size atual */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.3));
+  animation: effect 5s infinite ease-in;
+}
+
+#whatsapp-button:hover {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+/*whatsaap button style*/
