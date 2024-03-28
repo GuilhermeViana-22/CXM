@@ -6,7 +6,8 @@ body {
   font-family: 'DM Sans', sans-serif;
   text-align: justify;
   overflow-x: hidden;
-  font-size: 16pt;
+  font-size: 18pt;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,7 +16,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 100px;
 }
 nav {
+  margin-right: 40px;
   background-color: #000000 !important;
+}
+b{
+  color: red;
 }
 .nav-link {
   justify-content: end;
@@ -23,18 +28,40 @@ nav {
 .nav-item{
   padding: 15px;
 }
+span{
+  padding: 10px;
+}
 header {
   background-color: #000000;
   max-width: 100%;
   /* opacity: 0.91; */
   height: 97vh;
 }
+.logo-principal{
+  display: block;
+  max-width: 10%;
+
+}
+.banner {
+  display: block;
+  margin-left: 300px;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 1.9));
+  position: absolute;
+}
+
 section{
   margin-top: 150px;
   margin-bottom: 150px;
   max-width: 1096px;
+  padding: 20px;
 }
 /* logo inicial */
+
+
+
 .section-logo {
   display: block;
   margin-left: auto;
@@ -52,9 +79,7 @@ section{
   margin-right: auto;
   display: block;
 }
-.classe-imagem2{
-  background-color: #282525;
-}
+
 .imagem2{
   max-width: 100%;
 }
@@ -63,16 +88,57 @@ section{
 }
 /*vantagens*/
 .card-vantagens {
-  background-color: #d0cfcf;
+  background-color: #ebebeb;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   border: none;
-  height: 250px; /* Altura fixa para todos os cards */
+  height: 350px; /* Altura fixa para todos os cards */
+}
+.card-title{
+  text-align: left;
+  font-weight: bold;
+}
+.card-subtitle{
+  padding: 20px;
+  text-align: left;
 }
 .card-vantagens:hover{
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.643);
 }
+.button-container {
+  text-align: center;
+}
+.button-container{
+  padding: 50px;
+}
+.button-container button {
+
+  border-radius: 25px 25px 25px 25px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 200px;
+}
+
+.start-button {
+  background-color: #b90d0d;
+  color: white;
+  border: none;
+}
+.start-button:hover {
+  background-color: #eeeeee;
+  color: white;
+}
+
+.learn-more-button {
+  color: black;
+  border: solid 20px solid;
+}
+
+/*end vantagens*/
+
 /*depoimentos*/
 .titulo-depoimentos{
   color: #f4f4f4;
@@ -82,26 +148,89 @@ section{
   width: 100%; /* Define a largura da seção de depoimentos como 100% */
   margin-left: auto; /* Alinha a seção de depoimentos à esquerda */
   margin-right: auto; /* Alinha a seção de depoimentos à direita */
+  padding: 30px;
 }
 .card-depoimentos{
   background-color: #222629;
   padding: 40px;
+  max-width: 700px;
 }
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 50px; /* Aumenta a margem entre a foto do perfil e o nome */
+}
+
+.user-name {
+  margin-left: 50px; /* Aumenta a margem entre o nome e a foto do perfil */
+  color: #ffffff;
+}
+.rating {
+  margin-top: 10px;
+}
+
+.rating i {
+  color: gold;
+  font-size: 24px;
+}
+
+
+.card-depoimentos {
+  display: none;
+}
+
+.card-depoimentos.active {
+  display: block;
+}
+
+/*end depoimentos*/
+
+
+
 /*professor*/
+.professor{
+  background-color: #222629;
+}
 .card-professor{
   background-color: #222629;
   padding: 60px;
 }
 
-.fas{
-  background-color: #d5d5d5;
-  padding: 10px;
+.professor-head{
+  padding: 30px;
+}
+.titulo-professor{
+  color: #ffffff;
+}
+.subtitulo-professor{
+  color: #ffffff;
+}
+.apresentacao{
+  font-family: 50pt;
+}
+
+
+.card-vantagens-icons{
+  background-color: #f4dfdd;
+  padding: 20px;
   color: #dc3545; 
   font-weight: bold;
   border-radius: 100%;
   margin-left: 10%;
   margin-top: 10%;
 }
+/*end professor*/
+
+.novidades{
+  background-color: #ffffff; /* Cor de fundo da div newsletter */
+}
+
 .newsletter {
   background-color: #222629; /* Cor de fundo da div newsletter */
   padding: 20px; /* Espaçamento interno */
@@ -122,8 +251,8 @@ section{
   background-color: #c82333; /* Cor de fundo do botão vermelho ao passar o mouse */
 }
 .footer {
-  background-color: #333; /* Cor de fundo do footer */
-  color: #fff; /* Cor do texto */
+
+  color: #000000; /* Cor do texto */
   padding: 50px 0; /* Espaçamento interno */
 }
 
@@ -132,7 +261,7 @@ section{
 }
 
 .footer h5 {
-  color: #fff; /* Cor do título */
+  color: #000000; /* Cor do título */
   font-size: 1.2rem; /* Tamanho da fonte do título */
   margin-bottom: 20px; /* Espaçamento inferior */
 }
@@ -147,7 +276,7 @@ section{
 }
 
 .footer ul li a {
-  color: #fff; /* Cor do link */
+  color: #000000; /* Cor do link */
   text-decoration: none; /* Remove o sublinhado */
 }
 
@@ -188,3 +317,31 @@ section{
 }
 
 /*whatsaap button style*/
+
+
+/* =======================anime====================================== */
+[data-anime] {
+  opacity: 0;
+  transition: .3s;
+}
+
+[data-anime="left"] {
+  transform: translate3d(-90px, 0, 0);
+
+}
+
+[data-anime="left"].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+[data-anime="right"] {
+  transform: translate3d(-50px, 0, 0);
+}
+
+[data-anime="right"].animate {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+/* =======================anime====================================== */

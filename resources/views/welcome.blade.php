@@ -10,13 +10,16 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap">
     <link href="{{ asset('site/bootstrap.css') }}" rel="stylesheet">
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </script>
+    </script>
 </head>
-
 <body class="antialiased">
-
     <header>
+ 
         <nav class="navbar navbar-expand-lg navbar-dark">
+      
             <div class="container-fluid ">
                 <a class="navbar-brand" href="#"></a>
                 <br>
@@ -24,6 +27,7 @@
                     aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <img class="logo-principal" src="{{ asset('arquivos/logos/logo.png') }}" alt="clever">
                 <div class="collapse navbar-collapse" id="navbarColor01">
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item active">
@@ -41,22 +45,32 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#Novidades">Novidades</a>
                         </li>
+                        <li class="nav-item"> 
+                        </li>
                     </ul>
                 </div>
+                <button id="btnEntrar" type="submit" class="btn btn-danger mr-4 ml-4"> <i class="fas fa-sign-in-alt"></i> <span> Entrar</span></button>
+  
             </div>
+        
         </nav>
+    
         <div class="logoBanner">
-
+            <img class="banner animate__animated animate__bounceInRight"
+            src="{{ asset('arquivos/banner/note3.png') }}" alt="cxm">
         </div>
     </header>
-    <span><a href="https://api.whatsapp.com/send?phone=5511980439535" id="whatsapp-button"><i id="whatsapp" class="fab fa-whatsapp"></i></a></span>
+    <span><a href="https://api.whatsapp.com/send?phone=5511980439535" id="whatsapp-button"><i id="whatsapp"
+                class="fab fa-whatsapp"></i></a></span>
     <main>
         {{-- explicação dos tipos de intro  --}}
-        <section class="intro">
+        <section class="intro missao" data-anime="left">
+
             <figure class="logo">
-                <img class="section-logo animate__animated animate__jello   " src="{{ asset('arquivos/imagens/logo.png') }}" alt="cxm">
+                <img class="section-logo animate__animated animate__jello"
+                    src="{{ asset('arquivos/imagens/logo.png') }}" alt="cxm">
             </figure>
-            <h1><strong>Tudo que você precisa em um só lugar</strong></h1>
+            <h1><strong><b>Tudo</b> que você precisa em um só lugar</strong></h1>
             <p>Você está pronto para uma jornada de aprendizado de inglês como nunca antes? Prepare-se para explorar um
                 mundo de conteúdo exclusivo e de alta qualidade, projetado especialmente para você pela CXM!</p>
             <p>Com a CXM, você terá acesso a uma vasta gama de recursos educacionais, desde lições interativas até
@@ -69,11 +83,12 @@
                 jornada incrível juntos! Acesse agora mesmo a plataforma CXM e comece a sua jornada rumo à fluência!</p>
         </section>
         {{-- explicação dos tipos de serviço  --}}
-        <section class="servicos">
+        <article class="servicos missao" data-anime="right">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6">
-                        <img src="{{ asset('arquivos/imagens/online.jpg') }}" class="img-fluid animate__bounce" alt="Imagem de exemplo">
+                        <img src="{{ asset('arquivos/imagens/online.jpg') }}" class="img-fluid animate__bounce"
+                            alt="Imagem de exemplo">
                     </div>
                     <div class="col-md-6">
                         <div class="d-flex flex-column justify-content-center align-items-left h-100">
@@ -125,15 +140,16 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
         {{-- vantagens  --}}
-        <section class="vantagens">
-            <h1><strong>Vantagens e serviços que oferecemos </strong></h1>
+        <article class="vantagens missao" data-anime="right">
+            <h1><strong>Vantagens e <b>serviços</b> que<br> oferecemos </strong></h1>
             <div class="container mt-5">
                 <div class="row">
+
                     <div class="col-md-4">
                         <div class="card mb-4 card-vantagens">
-                            <i class="fas fa-check"></i>
+                            <i class="fas fa-chart-bar card-vantagens-icons"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Monitoramento de Progresso</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Implementação de ferramentas de avaliação e
@@ -141,12 +157,13 @@
                                     desempenho e identificando áreas de melhoria para um aprendizado mais eficaz</h6>
                             </div>
                         </div>
+
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 card-vantagens">
-                            <i class="fas fa-check"></i>
+                            <i class="fas fa-cogs card-vantagens-icons"></i>
                             <div class="card-body">
-                                <h5 class="card-title">Suporte Integrado2</h5>
+                                <h5 class="card-title">Suporte Integrado</h5>
                                 <h6 class="card-subtitle mb-2 text-muted"> A CXM oferece suporte individualizado, com
                                     tutores disponíveis para fornecer orientação e feedback personalizado, ajudando os
                                     alunos a superar desafios específicos e a alcançar seus objetivos linguísticos.</h6>
@@ -155,7 +172,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 card-vantagens">
-                            <i class="fas fa-check"></i>
+                            <i class="fas fa-flag card-vantagens-icons"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Conteúdo Dinâmico e Relevante</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Compromisso com a atualização constante do
@@ -167,7 +184,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 card-vantagens">
-                            <i class="fas fa-check"></i>
+                            <i class="fas fa-comment card-vantagens-icons"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Técnica e Pedagógica</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Além dos recursos de aprendizado, a
@@ -178,7 +195,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 card-vantagens">
-                            <i class="fas fa-check"></i>
+                            <i class="fas fa-clock card-vantagens-icons"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Flexibilidade de Horário</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Estude no seu próprio ritmo, sem restrições
@@ -188,7 +205,7 @@
                     </div>
                     <div class="col-md-4">
                         <div class="card mb-4 card-vantagens">
-                            <i class="fas fa-check"></i>
+                            <i class="fas fa-users card-vantagens-icons"></i>
                             <div class="card-body">
                                 <h5 class="card-title">Interação Social</h5>
                                 <h6 class="card-subtitle mb-2 text-muted">Criação de uma comunidade online onde os
@@ -200,81 +217,164 @@
                     </div>
                 </div>
             </div>
-        </section>
-        {{-- depoimentos  --}}
-        <article class="depoimentos">
-            <h1 class="titulo-depoimentos"><strong>Depoimentos</strong></h1>
-
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4 card-depoimentos">
-                        <h6 class="card-subtitle mb-2 text-white">“ Essa plataforma de inglês transformou minha visão
-                            sobre aprender um novo idioma, tornando-o divertido e envolvente com aulas dinâmicas e
-                            recursos interativos. Agora me sinto mais confiante na comunicação em inglês, percebendo uma
-                            melhoria significativa. Recomendo fortemente para quem busca dominar o inglês de forma
-                            eficaz e prática. “
-                        </h6>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 card-depoimentos">
-                        <h6 class="card-subtitle mb-2 text-white">“ Essa plataforma de inglês transformou minha visão
-                            sobre aprender um novo idioma, tornando-o divertido e envolvente com aulas dinâmicas e
-                            recursos interativos. Agora me sinto mais confiante na comunicação em inglês, percebendo uma
-                            melhoria significativa. Recomendo fortemente para quem busca dominar o inglês de forma
-                            eficaz e prática. “
-                        </h6>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card mb-4 card-depoimentos">
-                        <h6 class="card-subtitle mb-2 text-white">“ Essa plataforma de inglês transformou minha visão
-                            sobre aprender um novo idioma, tornando-o divertido e envolvente com aulas dinâmicas e
-                            recursos interativos. Agora me sinto mais confiante na comunicação em inglês, percebendo uma
-                            melhoria significativa. Recomendo fortemente para quem busca dominar o inglês de forma
-                            eficaz e prática. “
-                        </h6>
-                    </div>
-                </div>
-            </div>
+            <br>
+            <div class="button-container">
+                <button class="start-button">Começar</button>
+                <button type="button" class=" learn-more-button btn btn-light">Saber mais</button>
             </div>
         </article>
+        {{-- depoimentos  --}}
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,256L288,32L576,64L864,288L1152,32L1440,0L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
+        <article class="depoimentos">
+            <h1 class="titulo-depoimentos"><strong>Depoimentos</strong></h1>
+            <h3 class="titulo-depoimentos">Veja como nossos serviços revolucionaram a jornada de aprendizado de inglês
+                dos nossos alunos!</h3>
+            <div class="row">
+                <div class="card-depoimentos active">
+                    <h5 class="card-subtitle mb-2 text-white">“ Quero expressar minha profunda gratidão à plataforma
+                        Clever XM por mudar completamente minha abordagem ao aprendizado de inglês. Seus métodos de
+                        ensino dinâmicos e ferramentas interativas fizeram o processo de aprendizado se tornar não
+                        apenas eficaz, mas também incrivelmente envolvente. Com a Clever XM, minha confiança na
+                        comunicação em inglês cresceu exponencialmente, resultando em melhorias notáveis em minhas
+                        habilidades linguísticas. Recomendo entusiasticamente esta plataforma para qualquer pessoa que
+                        deseje dominar o inglês de maneira eficaz e prática. À equipe por trás da Clever XM, meu sincero
+                        agradecimento por proporcionar uma experiência de aprendizado tão transformadora. “
+                    </h5>
+                    <div class="user-profile">
+                        <img class="user-avatar" src="{{ asset('arquivos/user/user.jpg') }}" alt="Luiz Felipe">
+                        <div class="user-name">Luiz Felipe<br>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- depoimento 2 --}}
+                <div class="card-depoimentos">
+                    <h5 class="card-subtitle mb-2 text-white">“ Agradeço imensamente à plataforma Clever XM por
+                        transformar minha perspectiva sobre aprender inglês. Suas aulas dinâmicas e recursos interativos
+                        tornaram o processo de aprendizado envolvente e divertido. Graças à Clever XM, minha confiança
+                        na comunicação em inglês cresceu significativamente, refletindo em melhorias notáveis. Recomendo
+                        fortemente esta plataforma para quem busca dominar o inglês de maneira eficaz. À equipe da
+                        Clever XM, meu sincero agradecimento por tornarem possível essa jornada de aprendizado tão
+                        gratificante. “
+                    </h5>
+                    <div class="user-profile">
+                        <img class="user-avatar" src="{{ asset('arquivos/user/user5.jpeg') }}" alt="Luiz Felipe">
+                        <div class="user-name">Gabriel de Souza Silva<br>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- depoimento 3 --}}
+                <div class="card-depoimentos">
+                    <h5 class="card-subtitle mb-2 text-white">“ Quero expressar minha sincera gratidão ao professor
+                        Leonardo Albuquerque, da Clever XM, por sua incrível dedicação e talento no ensino de inglês.
+                        Sua paixão pelo idioma e sua habilidade em transmitir conhecimento de forma clara e envolvente
+                        são verdadeiramente inspiradoras. Graças à orientação e ao apoio personalizado do professor
+                        Leonardo, consegui avançar significativamente em meu aprendizado em um curto período de tempo.
+                        Sua abordagem atenciosa e encorajadora fez com que cada aula fosse uma experiência motivadora.
+                        Estou verdadeiramente impressionado com seu profissionalismo e comprometimento com o sucesso de
+                        seus alunos. Recomendo entusiasticamente o professor Leonardo e a Clever XM a todos que desejam
+                        aprender inglês com um mestre excepcional. Muito obrigado, professor Leonardo, por sua dedicação
+                        inabalável e por tornar o aprendizado uma jornada emocionante e gratificante. “
+                    </h5>
+                    <div class="user-profile">
+                        <img class="user-avatar" src="{{ asset('arquivos/user/user3.jpeg') }}" alt="Luiz Felipe">
+                        <div class="user-name">Francisco Conrado<br>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{-- depoimento 4 --}}
+                <div class="card-depoimentos">
+                    <h5 class="card-subtitle mb-2 text-white">“ Gostaria de expressar minha profunda gratidão à Clever
+                        XM pelo curso de inglês excepcional que oferecem. O que mais me impressionou foi a qualidade do
+                        ensino e o comprometimento dos professores. Graças à dedicação e habilidades excepcionais dos
+                        professores da Clever XM, consegui aprender rapidamente conceitos complexos que antes pareciam
+                        inatingíveis. Sua capacidade de simplificar e tornar acessível o aprendizado é verdadeiramente
+                        notável. Estou verdadeiramente impressionado e grato pelo progresso que alcancei em um curto
+                        período de tempo. Recomendo entusiasticamente a Clever XM a todos que buscam uma experiência de
+                        aprendizado excepcional e resultados tangíveis. Obrigado, Clever XM, por proporcionar uma
+                        educação de alta qualidade e por investir no sucesso de seus alunos! “
+                    </h5>
+                    <div class="user-profile">
+                        <img class="user-avatar" src="{{ asset('arquivos/user/user4.jpeg') }}" alt="Luiz Felipe">
+                        <div class="user-name">Ricardo Teixeira<br>
+                            <div class="rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button id="prevBtn" class="start-button">Próximo</button>
+                    <button id="nextBtn" class="start-button">Anterior</button>
+                </div>
+            </div>
+
+        </article>
+
         {{-- explicação  professor  --}}
-        <section class="professor">
-            <figure class="logo">
-                <img class="section-logo" src="{{ asset('arquivos/imagens/logo.png') }}" alt="cxm">
-            </figure>
-
-            <br>
-
-            <div class="row justify-content-between">
-                <div class="col-md-6">
+        <article class="professor missao" data-anime="right">
+            <div class="professor-head text-center">
+                <h1 class="titulo-professor"><strong>Instrutor</strong></h1>
+                <h3 class="subtitulo-professor">Conheça nosso dedicado e experiente instrutor da CXM.</h3>
+            </div>
+            
+            <div class="row prf">
+                <div class="col-md-6 text-center">
                     <figure class="imagem3">
-                <img class="imagem3" src="{{ asset('arquivos/imagens/copo.jpeg') }}" alt="cxm">
+                        <img class="imagem3" src="{{ asset('arquivos/professor/leonardo.jpeg') }}" alt="cxm">
                     </figure>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 text-center">
                     <div class="card mb-4 card-professor">
-                        <h6 class="card-subtitle mb-2 text-white">“ Olá a todos, sou Leonardo Albuquerque, professor de inglês na plataforma CXM. Com uma vasta experiência no ensino de inglês como segunda língua, estou comprometido em proporcionar uma experiência de aprendizado dinâmica e personalizada para cada aluno. Na plataforma CXM, estou disponível para oferecer suporte, feedback e orientação em todas as etapas do seu caminho de aprendizado. Estou ansioso para compartilhar meus conhecimentos, explorar novas habilidades linguísticas e, juntos, alcançarmos sucesso no mundo do inglês. Sejam bem-vindos à nossa comunidade de aprendizado! “
-                        </h6>
+                        <p class="card-subtitle text-white apresentacao">“ Olá a todos, sou Leonardo Albuquerque, professor de inglês na plataforma CXM. Com uma vasta experiência no ensino de inglês como segunda língua, estou comprometido em proporcionar uma experiência de aprendizado dinâmica e personalizada para cada aluno. Na plataforma CXM, estou disponível para oferecer suporte, feedback e orientação em todas as etapas do seu caminho de aprendizado. Estou ansioso para compartilhar meus conhecimentos, explorar novas habilidades linguísticas e, juntos, alcançarmos sucesso no mundo do inglês. Sejam bem-vindos à nossa comunidade de aprendizado! “
+                        </p>
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#222629" fill-opacity="1" d="M0,128L480,192L960,224L1440,224L1440,0L960,0L480,0L0,0Z"></path></svg>
         {{-- novidades  --}}
-        <section class="novidades" id="Novidades">
+        <section class="novidades missao" data-anime="right" id="Novidades">
             <figure class="logo">
                 <img class="section-logo" src="{{ asset('arquivos/imagens/logo.png') }}" alt="cxm">
             </figure>
 
             <div class="newsletter">
-                <p>Não perca as novidades! Assine nossa newsletter para receber conteúdos exclusivos, dicas de aprendizado e atualizações sobre nossos cursos de inglês diretamente na sua caixa de entrada. Mantenha-se informado e motivado em sua jornada de aprendizado. Inscreva-se agora mesmo!</p>
+                <p>Não perca as novidades! Assine nossa newsletter para receber conteúdos exclusivos, dicas de
+                    aprendizado e atualizações sobre nossos cursos de inglês diretamente na sua caixa de entrada.
+                    Mantenha-se informado e motivado em sua jornada de aprendizado. Inscreva-se agora mesmo!</p>
                 <form action="/inscrever" method="POST">
                     @csrf <!-- Adiciona o token CSRF para proteção contra CSRF -->
                     <div class="form-group">
-                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu e-mail" required>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="Digite seu e-mail" required>
                     </div>
-                    <button type="submit" class="btn btn-danger">   <i class="fas fa-paper-plane"></i>  Enviar</button>
+                    <button type="submit" class="btn btn-danger"> <i class="fas fa-paper-plane"></i> Enviar</button>
                 </form>
             </div>
         </section>
@@ -282,7 +382,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-3">
-                        <img class="section-logo-footer" src="{{ asset('arquivos/imagens/logo.png') }}" alt="cxm">
+                        <img class="section-logo-footer" src="{{ asset('arquivos/logos/logo3.png') }}"  alt="clever">
                     </div>
                     <div class="col-md-3">
                         <h5>Links Úteis</h5>
@@ -293,15 +393,7 @@
                             <li><a href="#">Contato</a></li>
                         </ul>
                     </div>
-                    <div class="col-md-3">
-                        <h5>Artigos Recentes</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Como melhorar suas habilidades de programação</a></li>
-                            <li><a href="#">Dicas para uma entrevista de emprego bem-sucedida</a></li>
-                            <li><a href="#">Os benefícios do aprendizado contínuo</a></li>
-                            <li><a href="#">Como se manter motivado ao aprender algo novo</a></li>
-                        </ul>
-                    </div>
+
                     <div class="col-md-3">
                         <h5>Redes Sociais</h5>
                         <ul class="list-unstyled">
@@ -316,23 +408,13 @@
                 <p class="text-center">&copy; 2024. Todos os direitos reservados.</p>
             </div>
         </footer>
-        
+
     </main>
 </body>
-
-<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="{{ asset('js/custom.js') }}"></script>
+{{-- cdn necessário para o dropdown menu mobile --}}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
 </script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
-    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous">
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
-</script>
-
-<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
-    crossorigin="anonymous"></script>
 
 </html>
