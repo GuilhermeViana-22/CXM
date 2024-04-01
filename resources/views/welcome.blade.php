@@ -12,14 +12,12 @@
     <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    </script>
-    </script>
 </head>
 <body class="antialiased">
     <header>
- 
+
         <nav class="navbar navbar-expand-lg navbar-dark">
-      
+
             <div class="container-fluid ">
                 <a class="navbar-brand" href="#"></a>
                 <br>
@@ -45,16 +43,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#Novidades">Novidades</a>
                         </li>
-                        <li class="nav-item"> 
+                        <li class="nav-item">
                         </li>
                     </ul>
                 </div>
-                <button id="btnEntrar" type="submit" class="btn btn-danger mr-4 ml-4"> <i class="fas fa-sign-in-alt"></i> <span> Entrar</span></button>
-  
+                <button id="btnEntrar" type="submit" class="btn btn-danger mr-4 ml-4" onclick="irPara('{{route('arearestrita')}}')"> <i class="fas fa-sign-in-alt"></i> <span> Entrar</span></button>
+
             </div>
-        
+
         </nav>
-    
+
         <div class="logoBanner">
             <img class="banner animate__animated animate__bounceInRight"
             src="{{ asset('arquivos/banner/note3.png') }}" alt="cxm">
@@ -91,52 +89,52 @@
                             alt="Imagem de exemplo">
                     </div>
                     <div class="col-md-6">
-                        <div class="d-flex flex-column justify-content-center align-items-left h-100">
-                            <h2><b>Acompanhamento Personalizado </b></h2>
-                            <div class="d-flex justify-content-between">
-                                <ul class="list-unstyled">
-                                    <li class="d-flex">
-                                        <i class="fas fa-check"></i>
-                                        <span>Feedback Preciso e Contínuo</span>
-                                    </li>
-                                    <li class="d-flex">
-                                        <i class="fas fa-check"></i>
-                                        <span>Personalização do Plano de Estudos</span>
-                                    </li>
-                                    <li class="d-flex">
-                                        <i class="fas fa-check"></i>
-                                        <span>Acompanhamento do Progresso em Tempo Real</span>
-                                    </li>
-                                </ul>
-                            </div>
+                        <h2><b>Acompanhamento Personalizado </b></h2>
+                        <div class="d-flex text-center">
+
+                            <ul class="list-unstyled">
+                                <li >
+                                    <i class="fas fa-check"></i>
+                                    <i>Feedback Preciso e Contínuo</i>
+                                </li>
+                                <li>
+                                    <i class="fas fa-check"></i>
+                                    <i>Personalização do Plano de Estudos</i>
+                                </li>
+                                <li >
+                                    <i class="fas fa-check"></i>
+                                    <i>Acompanhamento do Progresso em Tempo Real</i>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
                 </div>
             </div>
-            <div class="container-2">
+
+            <div class="container-2 clev  animate__animated animate__fadeIn">
                 <div class="row">
                     <div class="col-md-6">
                         <figure class="imagem1">
                             <img class="imagem1" src="{{ asset('arquivos/imagens/logo.png') }}" alt="cxm">
                         </figure>
-                        <li class="d-flex">
-                            <i class="fas fa-check"></i>
-                            <span>Feedback Preciso e Contínuo</span>
-                        </li>
-                        <li class="d-flex">
-                            <i class="fas fa-check"></i>
-                            <span>Personalização do Plano de Estudos</span>
-                        </li>
-                        <li class="d-flex">
-                            <i class="fas fa-check"></i>
-                            <span>Acompanhamento do Progresso em Tempo Real</span>
-                        </li>
+                        <ul class="list-unstyled cx-list">
+                            <li >
+                                <i class="fas fa-check"></i>
+                                <i class="phrases">Feedback Preciso e Contínuo</i>
+                            </li>
+                            <li>
+                                <i class="fas fa-check"></i>
+                                <i class="phrases">Personalização do Plano de Estudos</i>
+                            </li>
+                            <li >
+                                <i class="fas fa-check"></i>
+                                <i class="phrases">Acompanhamento do Progresso em Tempo Real</i>
+                            </li>
+                        </ul>
                     </div>
                     <div class="col-md-6">
-                        <figure class="classe-imagem2">
-                            <img class="imagem2" src="{{ asset('arquivos/imagens/banner.jpeg') }}" alt="cxm">
-                        </figure>
+                        <img class="imagem2" src="{{ asset('arquivos/imagens/banner.jpeg') }}" alt="clever">
                     </div>
                 </div>
             </div>
@@ -224,7 +222,10 @@
             </div>
         </article>
         {{-- depoimentos  --}}
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,256L288,32L576,64L864,288L1152,32L1440,0L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
+            <div class="svg">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,256L288,32L576,64L864,288L1152,32L1440,0L1440,320L1152,320L864,320L576,320L288,320L0,320Z"></path></svg>
+
+            </div>
         <article class="depoimentos">
             <h1 class="titulo-depoimentos"><strong>Depoimentos</strong></h1>
             <h3 class="titulo-depoimentos">Veja como nossos serviços revolucionaram a jornada de aprendizado de inglês
@@ -342,7 +343,7 @@
                 <h1 class="titulo-professor"><strong>Instrutor</strong></h1>
                 <h3 class="subtitulo-professor">Conheça nosso dedicado e experiente instrutor da CXM.</h3>
             </div>
-            
+
             <div class="row prf">
                 <div class="col-md-6 text-center">
                     <figure class="imagem3">
@@ -412,6 +413,7 @@
     </main>
 </body>
 <script src="{{ asset('js/custom.js') }}"></script>
+<script src="{{ asset('js/arearestrita.js') }}"></script>
 {{-- cdn necessário para o dropdown menu mobile --}}
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
     integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
