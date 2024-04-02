@@ -12,7 +12,7 @@ body {
   font-family: 'DM Sans', sans-serif;
   text-align: justify;
   overflow-x: hidden;
-  font-size: 18pt;
+  font-size: 14pt;
 
 }
 
@@ -43,6 +43,22 @@ header {
   /* opacity: 0.91; */
   height: 97vh;
 }
+.logoBanner{
+    display: block;
+}
+
+#btnEntrar{
+
+    display: block;
+}
+
+.logo{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 50%;
+}
+
 .logo-principal{
   display: block;
   max-width: 10%;
@@ -68,11 +84,13 @@ header {
     background-color: #ffffff;
     padding: 2px;
 }
+
+
 section{
   margin-top: 150px;
   margin-bottom: 150px;
   max-width: 1096px;
-  padding: 20px;
+
 }
 /* logo inicial */
 
@@ -136,6 +154,8 @@ section{
 .card-subtitle{
   padding: 20px;
   text-align: left;
+
+
 }
 .card-vantagens:hover{
   box-shadow: 0 0 10px rgba(255, 0, 0, 0.643);
@@ -175,6 +195,25 @@ section{
 }
 
 /*end vantagens*/
+
+.section-image{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 90px;
+    padding: 20px;
+}
+
+
+
+
+/*servicos*/
+.servicos{
+    display: block;
+}
+
+
 
 /*depoimentos*/
 .titulo-depoimentos{
@@ -239,7 +278,7 @@ section{
 }
 .card-professor{
   background-color: #222629;
-  padding: 60px;
+
 }
 
 .professor-head{
@@ -272,21 +311,13 @@ section{
 }
 
 .newsletter {
-  background-color: #222629; /* Cor de fundo da div newsletter */
-  background-color: #222629;
-background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
-  padding: 120px; /* Espaçamento interno */
+  background-color: #222629;background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.4'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   border-radius: 5px; /* Borda arredondada */
   color: #ffffff; /* Cor do texto do botão */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
   text-align: center; /* Centraliza o conteúdo horizontalmente */
 }
-#email{
-  width: 600px; 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .small{
   font-size: 15pt;
   font-weight: bold;
@@ -299,7 +330,7 @@ background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox=
 }
 .enviar{
   margin-top: 20px; /* Adiciona um espaçamento superior para separar o botão do parágrafo */
- width: 200px; 
+ width: 200px;
 }
 .btn-danger:hover {
   background-color: #c82333; /* Cor de fundo do botão vermelho ao passar o mouse */
@@ -404,3 +435,430 @@ background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox=
 }
 
 /* =======================anime====================================== */
+
+@media (max-width: 990px) {
+    .logoBanner{
+        display: none;
+    }
+    #btnEntrar{
+        display: none;
+    }
+    .logo-principal{
+        display: none;
+    }
+    .servicos{
+        display: none;
+    }
+    .intro{
+        padding: 20px;
+        text-align: left;
+    }
+    .start-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .learn-more-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    #start{
+        margin-bottom: 50px;
+    }
+    #prevBtn{
+        margin-bottom: 50px;
+    }
+    .section-logo-footer{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .card-vantagens {
+        background-color: rgba(245, 245, 245, 0.62);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        border: none;
+        height: 350px; /* Altura fixa para todos os cards */
+    }
+    .card-depoimentos{
+        background-color: #222629;
+        padding: 10px;
+
+    }
+    .user-profile{
+        max-width: 76%;
+        display: flex;
+        flex-direction: column;
+    }
+    .user-avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 73px;
+    }
+}
+
+@media (max-width: 860px) {
+    .logoBanner{
+        display: none;
+    }
+    #btnEntrar{
+        display: none;
+    }
+    .logo-principal{
+        display: none;
+    }
+    .servicos{
+        display: none;
+    }
+    .intro{
+        padding: 20px;
+        text-align: left;
+    }
+    .start-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .learn-more-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    #start{
+        margin-bottom: 50px;
+    }
+    #prevBtn{
+        margin-bottom: 50px;
+    }
+    .section-logo-footer{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .section-image{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 90px;
+        padding: 20px;
+    }
+    .card-vantagens {
+        background-color: rgba(245, 245, 245, 0.62);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        border: none;
+        height: 410px; /* Altura fixa para todos os cards */
+    }
+    .card-depoimentos{
+        background-color: #222629;
+        padding: 10px;
+
+    }
+    .user-profile{
+        max-width: 76%;
+        display: flex;
+        flex-direction: column;
+    }
+    .user-avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 73px;
+    }
+}
+
+
+/* grendess */
+@media (min-width: 601px) and (max-width: 700px) {
+    .logoBanner{
+        display: none;
+    }
+    #btnEntrar{
+        display: none;
+    }
+    .logo-principal{
+        display: none;
+    }
+    .servicos{
+        display: none;
+    }
+    .intro{
+        padding: 20px;
+        text-align: left;
+    }
+    .start-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .learn-more-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    #start{
+        margin-bottom: 50px;
+    }
+    #prevBtn{
+        margin-bottom: 50px;
+    }
+    .section-logo-footer{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .section-image{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 90px;
+        padding: 20px;
+    }
+    .card-vantagens {
+        background-color: rgba(245, 245, 245, 0.62);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        border: none;
+        height: 410px; /* Altura fixa para todos os cards */
+    }
+    .card-depoimentos{
+        background-color: #222629;
+        padding: 10px;
+
+    }
+    .user-profile{
+        max-width: 76%;
+        display: flex;
+        flex-direction: column;
+    }
+    .user-avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 73px;
+    }
+}
+
+/* tables */
+@media (min-width: 401px) and (max-width: 600px) {
+    .logoBanner{
+        display: none;
+    }
+    #btnEntrar{
+        display: none;
+    }
+    .logo-principal{
+        display: none;
+    }
+    .servicos{
+        display: none;
+    }
+    .intro{
+        padding: 20px;
+        text-align: left;
+    }
+    .start-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .learn-more-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    #start{
+        margin-bottom: 50px;
+    }
+    #prevBtn{
+        margin-bottom: 50px;
+    }
+    .section-logo-footer{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .section-image{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 90px;
+        padding: 20px;
+    }
+    .card-vantagens {
+        background-color: rgba(245, 245, 245, 0.62);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        border: none;
+        height: 410px; /* Altura fixa para todos os cards */
+    }
+    .card-depoimentos{
+        background-color: #222629;
+        padding: 10px;
+
+    }
+    .user-profile{
+        max-width: 76%;
+        display: flex;
+        flex-direction: column;
+    }
+    .user-avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 73px;
+    }
+}
+
+/* medios */
+@media (min-width: 301px) and (max-width: 400px) {
+    .logoBanner{
+        display: none;
+    }
+
+    #btnEntrar{
+        display: none;
+    }
+    .logo-principal{
+        display: none;
+    }
+    .servicos{
+        display: none;
+    }
+    .intro{
+        padding: 20px;
+        text-align: left;
+    }
+    .start-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .learn-more-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    #start{
+        margin-bottom: 50px;
+    }
+    #prevBtn{
+        margin-bottom: 50px;
+    }
+    .section-logo-footer{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .section-image{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 90px;
+        padding: 20px;
+    }
+    .card-vantagens {
+        background-color: rgba(245, 245, 245, 0.62);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+        border: none;
+        height: 410px; /* Altura fixa para todos os cards */
+    }
+    .card-depoimentos{
+        background-color: #222629;
+        padding: 10px;
+
+    }
+    .user-profile{
+        max-width: 76%;
+        display: flex;
+        flex-direction: column;
+    }
+    .user-avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 73px;
+    }
+
+}
+
+
+/* muito pequenos */
+@media (min-width: 50px) and (max-width: 300px)  {
+    .logoBanner{
+        display: none;
+    }
+    #btnEntrar{
+        display: none;
+    }
+    .logo-principal{
+        display: none;
+    }
+    .servicos{
+        display: none;
+    }
+
+    .intro{
+        padding: 20px;
+    }
+    .start-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    .learn-more-button{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+    #start{
+        margin-bottom: 50px;
+    }
+    #prevBtn{
+        margin-bottom: 50px;
+    }
+    .section-logo-footer{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+    }
+    .section-image{
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 90px;
+        padding: 20px;
+    }
+    .card-vantagens {
+    background-color: rgba(245, 245, 245, 0.62);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border: none;
+    height: 410px; /* Altura fixa para todos os cards */
+}
+    .card-depoimentos{
+        background-color: #222629;
+        padding: 10px;
+
+    }
+    .user-profile{
+        max-width: 76%;
+        display: flex;
+        flex-direction: column;
+    }
+    .user-avatar{
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 73px;
+    }
+
+}
