@@ -15,7 +15,7 @@
         </script>
     @endif
     <div class="newsletter">
-        <p>Não perca as novidades! Assine nossa newsletter para receber conteúdos exclusivos, dicas de
+        <p class="small">Não perca as novidades! Assine nossa newsletter para receber conteúdos exclusivos, dicas de
             aprendizado e atualizações sobre nossos cursos de inglês diretamente na sua caixa de entrada.
             Mantenha-se informado e motivado em sua jornada de aprendizado. Inscreva-se agora mesmo!</p>
 
@@ -24,7 +24,7 @@
             <div class="form-group">
                 <label for="email"></label><input type="email" class="form-control" id="email" name="email"  placeholder="Digite seu e-mail" required>
             </div>
-            <button  class="btn btn-danger"  onclick="formAjax('#form_newsletter')"> <i class="fas fa-paper-plane"></i> Enviar</button>
+            <button  class="btn btn-danger enviar"  onclick="formAjax('#form_newsletter')"> <i class="fas fa-paper-plane"></i> Enviar</button>
         </form>
     </div>
 </section>

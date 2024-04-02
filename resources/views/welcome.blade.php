@@ -368,21 +368,21 @@
                     </div>
                     <div class="col-md-3">
                         <h5>Links Úteis</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Página Inicial</a></li>
-                            <li><a href="#">Sobre Nós</a></li>
-                            <li><a href="#">Serviços</a></li>
-                            <li><a href="#">Contato</a></li>
+                        <ul class="list-unstyled redes">
+                            <li><a class="links-uteis" href="#">Página Inicial</a></li>
+                            <li><a class="links-uteis" href="#">Sobre Nós</a></li>
+                            <li><a class="links-uteis" href="#">Serviços</a></li>
+                            <li><a class="links-uteis" href="#">Contato</a></li>
                         </ul>
                     </div>
 
                     <div class="col-md-3">
                         <h5>Redes Sociais</h5>
-                        <ul class="list-unstyled">
-                            <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
-                            <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
-                            <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                        <ul class="list-unstyled redes">
+                            <li><a class="links-uteis" href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                            <li><a class="links-uteis" href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                            <li><a class="links-uteis" href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                            <li><a class="links-uteis" href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
                         </ul>
                     </div>
                 </div>
