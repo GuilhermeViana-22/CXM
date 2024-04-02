@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Arearestrita\LoginController;
+use App\Http\Controllers\ContatoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 Route::get('/arearestrita', [LoginController::class, 'index'])->name('arearestrita');
 
+Route::resource('/formulario', ContatoController::class);
+
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 

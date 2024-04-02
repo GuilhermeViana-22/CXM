@@ -359,26 +359,7 @@
             </div>
         </article>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#222629" fill-opacity="1" d="M0,128L480,192L960,224L1440,224L1440,0L960,0L480,0L0,0Z"></path></svg>
-        {{-- novidades  --}}
-        <section class="novidades missao" data-anime="right" id="Novidades">
-            <figure class="logo">
-                <img class="section-logo" src="{{ asset('arquivos/imagens/logo.png') }}" alt="cxm">
-            </figure>
-
-            <div class="newsletter">
-                <p>Não perca as novidades! Assine nossa newsletter para receber conteúdos exclusivos, dicas de
-                    aprendizado e atualizações sobre nossos cursos de inglês diretamente na sua caixa de entrada.
-                    Mantenha-se informado e motivado em sua jornada de aprendizado. Inscreva-se agora mesmo!</p>
-                <form action="/inscrever" method="POST">
-                    @csrf <!-- Adiciona o token CSRF para proteção contra CSRF -->
-                    <div class="form-group">
-                        <input type="email" class="form-control" id="email" name="email"
-                            placeholder="Digite seu e-mail" required>
-                    </div>
-                    <button type="submit" class="btn btn-danger"> <i class="fas fa-paper-plane"></i> Enviar</button>
-                </form>
-            </div>
-        </section>
+        @include('Elements.emails.newsletter')
         <footer class="footer">
             <div class="container">
                 <div class="row">
