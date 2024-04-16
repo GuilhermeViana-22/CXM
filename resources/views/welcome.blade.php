@@ -46,7 +46,7 @@
 
                 </ul>
             </div>
-            <button id="btnEntrar" type="submit" class="btn btn-danger mr-4 ml-4" onclick="irPara('{{route('arearestrita')}}')"> <i class="fas fa-sign-in-alt"></i> <span> Entrar</span></button>
+            <button id="btnEntrar" type="submit" class="btn btn-danger mr-4 ml-4" onclick="irPara('{{route('login')}}')"> <i class="fas fa-sign-in-alt"></i> <span> Entrar</span></button>
 
         </div>
 
@@ -213,7 +213,7 @@
         </div>
         <br>
         <div class="button-container">
-            <button id="start" class="start-button" onclick="irPara('{{route('arearestrita')}}')">Começar</button>
+            <button id="start" class="start-button" onclick="irPara('{{route('login')}}')">Começar</button>
             <button type="button" class=" learn-more-button btn btn-light">Saber mais</button>
         </div>
     </article>
