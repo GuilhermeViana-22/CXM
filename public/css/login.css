@@ -19,13 +19,13 @@ body {
     color: #fff;
     padding: 10px;
 }
+
 #email::placeholder {
     color: white;
 }
 #password::placeholder {
     color: white;
 }
-
 
 label{
     color: #fff;
@@ -64,4 +64,23 @@ span{
 
 .btn-link {
     text-decoration: none;
+}
+.form-control{
+    background-color: #38404E;
+    border: none;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    background-color: #38404E;
+    color: #fff;
+}
+
+.form-control:focus {
+    background-color: #38404E;
+    color: #fff;
+}
+
+.form-control::placeholder {
+    color: white;
 }

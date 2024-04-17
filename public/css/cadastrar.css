@@ -31,13 +31,14 @@ h5{
 .container{
     display: block;
     max-width: 80%;
+
 }
 .form-control{
     background-color: #38404E;
     border: none;
     color: #fff;
-    padding: 20px;
-    font-size: 17px; /* Tamanho da fonte enquanto escreve */
+    padding: 15px;
+    font-size: 17px;
 }
 
 .form-control::placeholder {
@@ -54,6 +55,13 @@ h5{
 
 .form-control::placeholder {
     color: white;
+}
+.invalid-feedback{
+    display: none;
+}
+
+option{
+    color: #ffffff !important;
 }
 
 label{
@@ -87,6 +95,9 @@ strong:hover{
 
 span{
     padding: 10px;
+}
+.card-body{
+    padding: 60px;
 }
 .card-footer {
     border-radius: 0 0 10px 10px;
@@ -135,7 +146,11 @@ span{
 .custom-button {
     display: block;
     margin: 0 auto;       /* Centraliza horizontalmente */
-    max-width: 50%;       /* Largura máxima de 50% */
+    max-width: 20%;       /* Largura máxima de 50% */
     width: 100%;          /* Faz o botão ocupar toda a largura disponível */
-    padding: 39px;
+    padding: 18px;
+}
+
+.continuar{
+    max-width: 900px;
 }

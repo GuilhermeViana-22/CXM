@@ -73,13 +73,30 @@ function showModal(url, title, tamanho = 'modal-lg', id= null, callback = functi
  * @param callbackOnError
  */
 function formAjax(form, callback, callbackOnError = function(){}) {
-    //Remove os erros de validação
-    $(form + " .is-invalid").removeClass('is-invalid');
+    // Remove os erros de validação
+    const invalidInputs = document.querySelectorAll(form + " .is-invalid");
+    invalidInputs.forEach(input => {
+        input.classList.remove('is-invalid');
+    });
 
-    //Obtem os dados do formulário
-    var formData = new FormData($(form)[0]);
+    // Obtém os dados do formulário
+    const formData = new FormData(document.querySelector(form));
 
-    sendFormData(formData, $(form).attr('action'), callback, callbackOnError);
+    // Verifica se há inputs inválidos
+    const inputs = document.querySelectorAll(form + " .form-control");
+    let hasInvalidInput = false;
+    inputs.forEach(input => {
+        if (!input.value.trim()) {
+            input.classList.add('is-invalid');
+            hasInvalidInput = true;
+        }
+    });
+
+    if (hasInvalidInput) {
+        return; // Não envia o formulário se houver inputs inválidos
+    }
+
+    sendFormData(formData, document.querySelector(form).getAttribute('action'), callback, callbackOnError);
 }
 
 /**

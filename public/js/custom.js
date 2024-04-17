@@ -1,12 +1,10 @@
 
 
-//animação dos itens
+//animaï¿½ï¿½o dos itens
 const target = document.querySelectorAll('[data-anime]');
 const card = document.querySelectorAll('.missao');
 const animationClass = 'animate';
 const ativo = 'ativo'
-console.log(target)
-
 
 function animeScroll(){
     ///distancia entre a barra e o topo do site
@@ -62,3 +60,6 @@ document.addEventListener("DOMContentLoaded", function() {
     document.getElementById('nextBtn').addEventListener('click', nextTestimonial);
     document.getElementById('prevBtn').addEventListener('click', prevTestimonial);
 });
+
+
+

@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use App\Http\Requests\LoginStoreRequest;
+use App\Models\Country;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -36,8 +38,14 @@ class LoginController extends Controller
 
     public function cadastrar()
     {
+        $countries = Country::all();
 
-        return view('auth.cadastrar');
+        return view('auth.cadastrar', compact('countries'));
+    }
+
+    public function store(LoginStoreRequest $request)
+    {
+          dd($request->all());
     }
 
 }

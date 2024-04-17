@@ -20,7 +20,7 @@ Route::get('/login', [LoginController::class, 'showLoginForm'])->name('login');
 
 Route::post('/logar', [LoginController::class, 'logar'])->name('auth.logar');
 Route::get('/cadastrar', [LoginController::class, 'cadastrar'])->name( 'cadastrar');
-Route::post('/store', [LoginController::class, 'store'])->name('store');
+Route::post('/store', [LoginController::class, 'store'])->name('auth.store');
 // Rotas que exigem autenticação
 Route::middleware(['auth'])->group(function () {
     Route::get('/arearestrita', [LoginController::class, 'index'])->name('arearestrita');
