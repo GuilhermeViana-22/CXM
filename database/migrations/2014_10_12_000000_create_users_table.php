@@ -16,13 +16,25 @@ class CreateUsersTable extends Migration
         Schema::create('users', function (Blueprint $table) {
             $table->id();
             $table->string('nome');
+            $table->string('sobrenome');
             $table->string('cpf');
-            $table->integer('funcao_id');
-            $table->string('email')->unique();
+            $table->string('country');
+            $table->string('telefone');
+            $table->date('data_nascimento');
+            $table->string('cep');
+            $table->string('rua');
+            $table->string('bairro');
+            $table->string('cidade');
+            $table->string('estado');
+            $table->string('uf');
+            $table->integer('numero');
+            $table->string('complemento')->nullable();
+            $table->string('email');
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            $table->softDeletes();
         });
     }
 
@@ -36,3 +48,4 @@ class CreateUsersTable extends Migration
         Schema::dropIfExists('users');
     }
 }
+

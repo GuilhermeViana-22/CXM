@@ -25,7 +25,7 @@
                 <h1 class="text-center">Vamos começar seu cadastro</h1>
                 <h4 class="card-title">Para que você possa começar a utilizar nossa plataforma, vamos precisar de
                     algumas informações:</h4>
-                <form method="POST" action="{{route('auth.store')}}" id="form_login_user">
+                <form method="post" action="{{route('auth.store')}}" id="form_login_user">
                     @csrf
                     <h5 class="text">Seus dados pessoais</h5>
                     <div class="row">
@@ -194,5 +194,38 @@
         $('#inputTelefone').mask('(00) 000000000');
         $('#inputNumero').mask('0000');
     });
+
+    $(document).ready(function() {
+        // Função para gerar uma string aleatória
+        function generateRandomString(length) {
+            var result = '';
+            var characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            var charactersLength = characters.length;
+            for (var i = 0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            return result;
+        }
+
+        // Preencher campos com valores aleatórios
+        $('#nome').val(generateRandomString(8));
+        $('#inputSobrenome').val(generateRandomString(8));
+        $('#inputCPF').val(Math.floor(Math.random() * 99999999999));
+        $('#country').val(Math.floor(Math.random() * 10) + 1); // Substitua pelo valor correto
+        $('#inputTelefone').val(Math.floor(Math.random() * 999999999));
+        $('#inputDataNascimento').val('2000-01-01'); // Substitua pela data aleatória desejada
+        $('#cep').val('00000-000'); // Substitua pelo valor do CEP correto
+        $('#rua').val(generateRandomString(8));
+        $('#bairro').val(generateRandomString(8));
+        $('#cidade').val(generateRandomString(8));
+        $('#estado').val(generateRandomString(2));
+        $('#uf').val(generateRandomString(2));
+        $('#inputNumero').val(Math.floor(Math.random() * 1000));
+        $('#inputComplemento').val(generateRandomString(8));
+        $('#inputEmail').val(generateRandomString(8) + '@example.com');
+        $('#inputSenha').val(generateRandomString(8));
+        $('#inputConfirmarSenha').val(generateRandomString(8));
+    });
+
 </script>
 </html>

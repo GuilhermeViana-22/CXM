@@ -30,7 +30,7 @@ class LoginStoreRequest extends FormRequest
             'complemento' => 'string',
             'email' => 'required|email',
             'senha' => 'required|string',
-            'confirmar_senha' => 'required|string',
+
         ];
     }
 }
