@@ -6,18 +6,24 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="wm-language"> <ul> <li><a href="#">English</a></li> <li><a href="#">Português</a></li> </ul> </div>
+                    <div class="wm-language">
+                        <ul>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Português</a></li>
+                        </ul>
+                    </div>
                     <ul class="wm-stripinfo">
-                        <li><i class="wmicon-location"></i> 2925 Swick Hill Street, Charlotte, NC 28202</li>
-                        <li><i class="wmicon-technology4"></i> +1 984-700-7129</li>
-                        <li><i class="wmicon-clock2"></i> Mon - fri: 7:00am - 6:00pm</li>
+                        <li><i class="wmicon-location"></i> São Paulo, SP</li>
+                        <li><i class="wmicon-technology4"></i> +55 (11) 98043-9535</li>
+                        <li><i class="wmicon-envelope"></i> <a style="color: #f0f0f0" href="mailto:wilsonlsvieira@hotmail.com">wilsonlsvieira@hotmail.com</a></li>
+                        <li><i class="wmicon-envelope"></i> <a style="color: #f0f0f0" href="mailto:administrativo@cleverxm.com">administrativo@cleverxm.com</a></li>
                     </ul>
                     <ul class="wm-adminuser-section">
                         <li>
-                            <a onclick="irPara('{{route('login')}}')">login</a>
+                            <a onclick="irPara('{{route('login')}}')">Entrar</a>
                         </li>
                         <li>
-                            <a href="#">Contact</a>
+                            <a href="#">Contato</a>
                         </li>
                         <li>
                             <a href="#" class="wm-search-btn" data-toggle="modal" data-target="#ModalSearch"><i class="wmicon-search"></i></a>
@@ -27,6 +33,7 @@
             </div>
         </div>
     </div>
+
     <!--// TopStrip \\-->
 
     <!--// MainHeader \\-->
@@ -34,15 +41,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-3">
-                    <a href="index-2.html" class="wm-logo"><img src="{{ asset('/arquivos/imagens/logo.png') }}" alt="">
+                    <a href="index-2.html" class="wm-logo">
+                        <img src="{{ asset('/arquivos/imagens/logo.png') }}" alt="Logo">
                     </a>
                 </div>
                 <div class="col-md-9">
-                    <!--// Navigation \\-->
+                    <!--// Navegação \\-->
                     <nav class="navbar navbar-default">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="true">
-                                <span class="sr-only">Toggle navigation</span>
+                                <span class="sr-only">Alternar navegação</span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
                                 <span class="icon-bar"></span>
@@ -50,111 +58,111 @@
                         </div>
                         <div class="collapse navbar-collapse" id="navbar-collapse-1">
                             <ul class="nav navbar-nav">
-                                <li class="active"><a href="#">Home</a>
+                                <li class="active"><a href="#">Início</a>
                                     <ul class="wm-dropdown-menu">
-                                        <li><a href="index-2.html">Education Home V1</a></li>
-                                        <li><a href="index-two.html">Education Home V2</a></li>
-                                        <li><a href="index-three.html">Education Home V3</a></li>
-                                        <li><a href="index-four.html">Education Home V4</a></li>
+                                        <li><a href="index-2.html">Início Educação V1</a></li>
+                                        <li><a href="index-two.html">Início Educação V2</a></li>
+                                        <li><a href="index-three.html">Início Educação V3</a></li>
+                                        <li><a href="index-four.html">Início Educação V4</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">courses</a>
+                                <li><a href="#">Cursos</a>
                                     <ul class="wm-dropdown-menu">
-                                        <li><a href="courses-grid.html">Courses Grid</a></li>
-                                        <li><a href="courses-list.html">Courses List</a></li>
-                                        <li><a href="courses-detail.html">Courses Detail</a></li>
+                                        <li><a href="courses-grid.html">Grade de Cursos</a></li>
+                                        <li><a href="courses-list.html">Lista de Cursos</a></li>
+                                        <li><a href="courses-detail.html">Detalhes do Curso</a></li>
                                     </ul>
                                 </li>
-                                <li><a href="#">event</a>
+                                <li><a href="#">Eventos</a>
                                     <ul class="wm-dropdown-menu">
-                                        <li><a href="event-grid.html">Event Grid</a></li>
-                                        <li><a href="event-detail.html">Event Detail</a></li>
+                                        <li><a href="event-grid.html">Grade de Eventos</a></li>
+                                        <li><a href="event-detail.html">Detalhes do Evento</a></li>
                                     </ul>
                                 </li>
-                                <li ><a href="#">Dashboard</a>
+                                <li><a href="#">Painel</a>
                                     <ul class="wm-dropdown-menu">
-                                        <li><a href="dashboard-courses.html">Courses</a></li>
-                                        <li><a href="student-dashboard-favourite.html">Favourite</a></li>
-                                        <li><a href="student-dashboard-my-courses.html">My Courses</a></li>
-                                        <li><a href="student-dashboard-profile.html">Profile Settings</a></li>
-                                        <li><a href="student-dashboard-settings.html">Settings</a></li>
-                                        <li><a href="student-dashboard-statement.html">Statement</a></li>
+                                        <li><a href="dashboard-courses.html">Cursos</a></li>
+                                        <li><a href="student-dashboard-favourite.html">Favoritos</a></li>
+                                        <li><a href="student-dashboard-my-courses.html">Meus Cursos</a></li>
+                                        <li><a href="student-dashboard-profile.html">Configurações do Perfil</a></li>
+                                        <li><a href="student-dashboard-settings.html">Configurações</a></li>
+                                        <li><a href="student-dashboard-statement.html">Declaração</a></li>
                                     </ul>
                                 </li>
-                                <li class="wm-megamenu-li"><a href="#">Pages</a>
+                                <li class="wm-megamenu-li"><a href="#">Páginas</a>
                                     <ul class="wm-megamenu">
                                         <li class="row">
                                             <div class="col-md-2">
                                                 <h4>Link 1</h4>
                                                 <ul class="wm-megalist">
-                                                    <li><a href="404-page.html">404 Error Page</a></li>
-                                                    <li><a href="about-us.html">About Us</a></li>
+                                                    <li><a href="404-page.html">Página de Erro 404</a></li>
+                                                    <li><a href="about-us.html">Sobre Nós</a></li>
                                                     <li><a href="blog-grid.html">Blog Grid</a></li>
-                                                    <li><a href="blog-list.html">Blog List</a></li>
-                                                    <li><a href="blog-detail.html">Blog Detail</a></li>
-                                                    <li><a href="faq-page.html">Faq Page</a></li>
+                                                    <li><a href="blog-list.html">Blog Lista</a></li>
+                                                    <li><a href="blog-detail.html">Detalhes do Blog</a></li>
+                                                    <li><a href="faq-page.html">Página de FAQ</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-md-2">
                                                 <h4>Link 2</h4>
                                                 <ul class="wm-megalist">
-                                                    <li><a href="ourprofessors.html">Our Professors</a></li>
-                                                    <li><a href="our-professsors-detail.html">Our Professsors Detail</a></li>
-                                                    <li><a href="typography-elements.html">Typography Elements</a></li>
-                                                    <li><a href="courses-list.html">Courses List</a></li>
-                                                    <li><a href="courses-grid.html">Courses Grid</a></li>
-                                                    <li><a href="gallery.html">Gallery</a></li>
+                                                    <li><a href="ourprofessors.html">Nossos Professores</a></li>
+                                                    <li><a href="our-professsors-detail.html">Detalhes dos Nossos Professores</a></li>
+                                                    <li><a href="typography-elements.html">Elementos de Tipografia</a></li>
+                                                    <li><a href="courses-list.html">Lista de Cursos</a></li>
+                                                    <li><a href="courses-grid.html">Grade de Cursos</a></li>
+                                                    <li><a href="gallery.html">Galeria</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-md-2">
                                                 <h4>Link 3</h4>
                                                 <ul class="wm-megalist">
-                                                    <li><a href="courses-detail.html">Courses Detail</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
-                                                    <li><a href="shop-grid.html">Shop Grid</a></li>
-                                                    <li><a href="shop-single-product.html">Shop Detail</a></li>
-                                                    <li><a href="contact-us.html">Contact Us</a></li>
+                                                    <li><a href="courses-detail.html">Detalhes do Curso</a></li>
+                                                    <li><a href="shop-list.html">Lista de Produtos</a></li>
+                                                    <li><a href="shop-grid.html">Grade de Produtos</a></li>
+                                                    <li><a href="shop-single-product.html">Detalhes do Produto</a></li>
+                                                    <li><a href="contact-us.html">Contate-Nos</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-md-6">
                                                 <a href="#" class="wm-thumbnail">
-                                                    <img src="extra-images/megamenu-frame.jpg" alt="" />
+                                                    <img src="extra-images/megamenu-frame.jpg" alt="Imagem do Mega Menu">
                                                 </a>
                                             </div>
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="contact-us.html">Shop</a>
+                                <li><a href="contact-us.html">Loja</a>
                                     <ul class="wm-dropdown-menu">
-                                        <li><a href="shop-grid.html">Shop Grid</a></li>
-                                        <li><a href="shop-list.html">Shop List</a></li>
-                                        <li><a href="shop-single-product.html">Shop Detail</a></li>
+                                        <li><a href="shop-grid.html">Grade de Produtos</a></li>
+                                        <li><a href="shop-list.html">Lista de Produtos</a></li>
+                                        <li><a href="shop-single-product.html">Detalhes do Produto</a></li>
                                     </ul>
                                 </li>
-                                <li class="wm-megamenu-li"><a href="#">Contact</a>
+                                <li class="wm-megamenu-li"><a href="#">Contato</a>
                                     <ul class="wm-megamenu">
                                         <li class="row">
                                             <div class="col-md-2">
                                                 <h4>Links 1</h4>
                                                 <ul class="wm-megalist">
-                                                    <li><a href="contact-us.html">Contact Us</a></li>
-                                                    <li><a href="404-page.html">404 Error Page</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
-                                                    <li><a href="shop-grid.html">Shop Grid</a></li>
-                                                    <li><a href="shop-single-product.html">Shop Detail</a></li>
+                                                    <li><a href="contact-us.html">Contate-Nos</a></li>
+                                                    <li><a href="404-page.html">Página de Erro 404</a></li>
+                                                    <li><a href="shop-list.html">Lista de Produtos</a></li>
+                                                    <li><a href="shop-grid.html">Grade de Produtos</a></li>
+                                                    <li><a href="shop-single-product.html">Detalhes do Produto</a></li>
                                                 </ul>
                                             </div>
                                             <div class="col-md-5">
-                                                <h4>Artists text</h4>
+                                                <h4>Texto dos Artistas</h4>
                                                 <div class="wm-mega-text">
-                                                    <p>Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love.</p>
-                                                    <p>If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.</p>
+                                                    <p>Seu trabalho vai preencher uma grande parte da sua vida, e a única maneira de estar verdadeiramente satisfeito é fazer o que você acredita ser um grande trabalho. E a única maneira de fazer um grande trabalho é amar o que faz.</p>
+                                                    <p>Se você ainda não encontrou, continue procurando. Não se acomode. Como em todas as questões do coração, você saberá quando encontrar.</p>
                                                 </div>
                                             </div>
                                             <div class="col-md-5">
-                                                <h4>sub category widget</h4>
+                                                <h4>Widget de Subcategoria</h4>
                                                 <a href="#" class="wm-thumbnail">
-                                                    <img src="extra-images/mega-menuadd.jpg" alt="" />
+                                                    <img src="extra-images/mega-menuadd.jpg" alt="Imagem do Widget de Subcategoria">
                                                 </a>
                                             </div>
                                         </li>
@@ -163,8 +171,8 @@
                             </ul>
                         </div>
                     </nav>
-                    <!--// Navigation \\-->
-                    <a  onclick="irPara('{{route('login')}}')" class="wm-header-btn">get started</a>
+                    <!--// Navegação \\-->
+                    <a onclick="irPara('{{route('login')}}')" class="wm-header-btn">Começar</a>
                 </div>
             </div>
         </div>
@@ -173,3 +181,6 @@
 
 </header>
 <!--// Header \\-->
+
+<span><a href="https://api.whatsapp.com/send?phone=5511980439535" id="whatsapp-button"><i id="whatsapp"
+                                                                                          class="fab fa-whatsapp"></i></a></span>

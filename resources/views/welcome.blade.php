@@ -17,6 +17,9 @@
     <link href="{{ asset('css/prettyphoto.css') }}" rel="stylesheet">
     <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
     <link href="{{ asset('css/slick-slider.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
 </head>
 <body>
 
@@ -37,87 +40,93 @@
 
                     <div class="col-md-4">
                         <div class="wm-search-course">
-                            <h3 class="wm-short-title wm-color">Find Your Course</h3>
-                            <p>Fill in the form below to find your course:</p>
+                            <h3 class="wm-short-title wm-color">Encontre Seu Curso</h3>
+                            <p>Preencha o formulário abaixo para encontrar seu curso:</p>
                             <form>
                                 <ul>
                                     <li>
                                         <div class="wm-radio">
                                             <div class="wm-radio-partition">
-                                                <input id="male" type="radio" name="gender" value="male">
-                                                <label for="male">by ID</label>
+                                                <input id="by-id" type="radio" name="search_by" value="id">
+                                                <label for="by-id">Por ID</label>
                                             </div>
                                             <div class="wm-radio-partition">
-                                                <input id="female" type="radio" name="gender" value="female">
-                                                <label for="female">by name</label>
+                                                <input id="by-name" type="radio" name="search_by" value="name">
+                                                <label for="by-name">Por nome</label>
                                             </div>
                                         </div>
                                     </li>
-                                    <li> <input type="text" value="Course Name" onblur="if(this.value == '') { this.value ='Course Name'; }" onfocus="if(this.value =='Course Name') { this.value = ''; }"> <i class="wmicon-search"></i> </li>
+                                    <li>
+                                        <input type="text" value="Nome do Curso" onblur="if(this.value == '') { this.value ='Nome do Curso'; }" onfocus="if(this.value =='Nome do Curso') { this.value = ''; }">
+                                        <i class="wmicon-search"></i>
+                                    </li>
                                     <li>
                                         <div class="wm-apply-select">
                                             <select>
-                                                <option>Category</option>
-                                                <option>Category</option>
-                                                <option>Category</option>
-                                                <option>Category</option>
+                                                <option>Categoria</option>
+                                                <option>Categoria</option>
+                                                <option>Categoria</option>
+                                                <option>Categoria</option>
                                             </select>
                                         </div>
                                     </li>
-                                    <li> <input type="submit" value="Search course"> </li>
+                                    <li>
+                                        <input type="submit" value="Buscar Curso">
+                                    </li>
                                 </ul>
                             </form>
                         </div>
                     </div>
+
                     <div class="col-md-8">
                         <div class="wm-service wm-box-service">
                             <ul>
                                 <li>
                                     <div class="wm-box-service-wrap wm-bgcolor">
-                                        <i class="wmicon-suitcase"></i>
-                                        <h6><a href="#">Business</a></h6>
+                                        <i class="fas fa-user"></i>
+                                        <h6><a href="#">Desenvolvimento Pessoal</a></h6>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="wm-box-service-wrap wm-bgcolor">
-                                        <i class="wmicon-money"></i>
-                                        <h6><a href="#">Economics</a></h6>
+                                        <i class="fas fa-book-open"></i>
+                                        <h6><a href="#">Aprendizado Acadêmico</a></h6>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="wm-box-service-wrap wm-bgcolor">
-                                        <i class="wmicon-school"></i>
-                                        <h6><a href="#">Math</a></h6>
+                                        <i class="fas fa-clipboard-check"></i>
+                                        <h6><a href="#">Preparação para Vestibular</a></h6>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="wm-box-service-wrap wm-bgcolor">
-                                        <i class="wmicon-science"></i>
-                                        <h6><a href="#">Science</a></h6>
+                                        <i class="fas fa-globe-americas"></i>
+                                        <h6><a href="#">Aprendizado para Viagens</a></h6>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="wm-box-service-wrap wm-bgcolor">
-                                        <i class="wmicon-computer"></i>
-                                        <h6><a href="#">Computing</a></h6>
+                                        <i class="fas fa-microphone"></i>
+                                        <h6><a href="#">Melhora da Oratória</a></h6>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="wm-box-service-wrap wm-bgcolor">
-                                        <i class="wmicon-technology3"></i>
-                                        <h6><a href="#">Web Design</a></h6>
+                                        <i class="fas fa-lightbulb"></i>
+                                        <h6><a href="#">Criatividade</a></h6>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="wm-box-service-wrap wm-bgcolor">
-                                        <i class="wmicon-web3"></i>
-                                        <h6><a href="#">Development</a></h6>
+                                        <i class="fas fa-users"></i>
+                                        <h6><a href="#">Trabalho em Equipe</a></h6>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="wm-box-service-wrap wm-bgcolor">
-                                        <i class="wmicon-shape"></i>
-                                        <h6><a href="#">Biology</a></h6>
+                                        <i class="fas fa-calendar-alt"></i>
+                                        <h6><a href="#">Gestão do Tempo</a></h6>
                                     </div>
                                 </li>
                             </ul>
@@ -135,77 +144,85 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="wm-fancy-title"> <h2>Popular <span>Courses</span></h2> </div>
+                        <div class="wm-fancy-title"> <h2>Cursos <span>Populares</span></h2> </div>
                         <div class="wm-courses wm-courses-popular">
                             <ul class="row">
                                 <li class="col-md-3">
                                     <div class="wm-courses-popular-wrap">
-                                        <figure> <a href="#"><img src="extra-images/papular-courses-1.jpg" alt=""> <span class="wm-popular-hover"> <small>see course</small> </span> </a>
+                                        <figure>
+                                            <a href="#"><img src="extra-images/papular-courses-1.jpg" alt="Curso de Pesquisa Avançada">
+                                                <span class="wm-popular-hover"> <small>ver curso</small> </span> </a>
                                             <figcaption>
-                                                <img src="extra-images/papular-courses-thumb-1.jpg" alt="">
-                                                <h6><a href="#">Shelly T. Forrester</a></h6>
+                                                <img src="extra-images/papular-courses-thumb-1.jpg" alt="Instrutor: Shelly T. Forrester">
+                                                <h6><a href="#">Pesquisa Avançada em Arquitetura</a></h6>
                                             </figcaption>
                                         </figure>
                                         <div class="wm-popular-courses-text">
-                                            <h6><a href="#">Advanced Architectural Research</a></h6>
+                                            <h6><a href="#">Pesquisa Avançada em Arquitetura</a></h6>
                                             <div class="wm-courses-price"> <span>$32</span> </div>
                                             <ul>
-                                                <li><a href="#" class="wm-color"><i class="wmicon-social7"></i> 342</a></li>
-                                                <li><a href="#" class="wm-color"><i class="wmicon-social6"></i> 10</a></li>
+                                                <li><a href="#" class="wm-color"><i class="wmicon-social7"></i> 342 alunos</a></li>
+                                                <li><a href="#" class="wm-color"><i class="wmicon-social6"></i> 10 avaliações</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-3">
                                     <div class="wm-courses-popular-wrap">
-                                        <figure> <a href="#"><img src="extra-images/papular-courses-2.jpg" alt=""> <span class="wm-popular-hover"> <small>see course</small> </span> </a>
+                                        <figure>
+                                            <a href="#"><img src="extra-images/papular-courses-2.jpg" alt="Curso de Paisagismo e Urbanismo Avançado">
+                                                <span class="wm-popular-hover"> <small>ver curso</small> </span> </a>
                                             <figcaption>
-                                                <img src="extra-images/papular-courses-thumb-2.jpg" alt="">
-                                                <h6><a href="#">Sam K. Harrington</a></h6>
+                                                <img src="extra-images/papular-courses-thumb-2.jpg" alt="Instrutor: Sam K. Harrington">
+                                                <h6><a href="#">Paisagismo e Urbanismo Avançado</a></h6>
                                             </figcaption>
                                         </figure>
                                         <div class="wm-popular-courses-text">
-                                            <h6><a href="#">Advanced Landscape & Urbanism</a></h6>
-                                            <div class="wm-courses-price"> <span>Free</span> </div>
+                                            <h6><a href="#">Paisagismo e Urbanismo Avançado</a></h6>
+                                            <div class="wm-courses-price"> <span>Gratuito</span> </div>
                                             <ul>
-                                                <li><a href="#" class="wm-color"><i class="wmicon-social7"></i> 438</a></li>
-                                                <li><a href="#" class="wm-color"><i class="wmicon-social6"></i> 28</a></li>
+                                                <li><a href="#" class="wm-color"><i class="wmicon-social7"></i> 438 alunos</a></li>
+                                                <li><a href="#" class="wm-color"><i class="wmicon-social6"></i> 28 avaliações</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-3">
                                     <div class="wm-courses-popular-wrap">
-                                        <figure> <a href="#"><img src="extra-images/papular-courses-3.jpg" alt=""> <span class="wm-popular-hover"> <small>see course</small> </span> </a>
+                                        <figure>
+                                            <a href="#"><img src="extra-images/papular-courses-3.jpg" alt="Curso de Design Transdisciplinar">
+                                                <span class="wm-popular-hover"> <small>ver curso</small> </span> </a>
                                             <figcaption>
-                                                <img src="extra-images/papular-courses-thumb-3.jpg" alt="">
-                                                <h6><a href="#">Sara A. Shirley</a></h6>
+                                                <img src="extra-images/papular-courses-thumb-3.jpg" alt="Instrutor: Sara A. Shirley">
+                                                <h6><a href="#">Design Transdisciplinar</a></h6>
                                             </figcaption>
                                         </figure>
                                         <div class="wm-popular-courses-text">
-                                            <h6><a href="#">Transdisciplinary Design</a></h6>
+                                            <h6><a href="#">Design Transdisciplinar</a></h6>
                                             <div class="wm-courses-price"> <span>$79</span> </div>
                                             <ul>
-                                                <li><a href="#" class="wm-color"><i class="wmicon-social7"></i> 309</a></li>
-                                                <li><a href="#" class="wm-color"><i class="wmicon-social6"></i> 19</a></li>
+                                                <li><a href="#" class="wm-color"><i class="wmicon-social7"></i> 309 alunos</a></li>
+                                                <li><a href="#" class="wm-color"><i class="wmicon-social6"></i> 19 avaliações</a></li>
                                             </ul>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="col-md-3">
                                     <div class="wm-courses-popular-wrap">
-                                        <figure> <a href="#"><img src="extra-images/papular-courses-4.jpg" alt=""> <span class="wm-popular-hover"> <small>see course</small> </span> </a>
+                                        <figure>
+                                            <a href="#"><img src="extra-images/papular-courses-4.jpg" alt="Curso de Sistemas de Informação Financeira">
+                                                <span class="wm-popular-hover"> <small>ver curso</small> </span> </a>
                                             <figcaption>
-                                                <img src="extra-images/papular-courses-thumb-4.jpg" alt="">
-                                                <h6><a href="#">Julius M. Lepage</a></h6>
+                                                <img src="extra-images/papular-courses-thumb-4.jpg" alt="Instrutor: Julius M. Lepage">
+                                                <h6><a href="#">Sistemas de Informação Financeira</a></h6>
                                             </figcaption>
                                         </figure>
                                         <div class="wm-popular-courses-text">
-                                            <h6><a href="#">Financial Information Systems</a></h6>
+                                            <h6><a href="#">Sistemas de Informação Financeira</a></h6>
                                             <div class="wm-courses-price"> <span>$50</span> </div>
                                             <ul>
-                                                <li><a href="#" class="wm-color"><i class="wmicon-social7"></i> 298</a></li>
-                                                <li><a href="#" class="wm-color"><i class="wmicon-social6"></i> 11</a></li>
+                                                <li><a href="#" class="wm-color"><i class="wmicon-social7"></i> 298 alunos</a></li>
+                                                <li><a href="#" class="wm-color"><i class="wmicon-social6"></i> 11 avaliações</a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -218,6 +235,7 @@
             </div>
         </div>
         <!--// Main Section \\-->
+
 
         <!--// Main Section \\-->
         <div class="wm-main-section wm-whychooseus-full">
@@ -226,29 +244,29 @@
 
                     <div class="col-md-8">
                         <div class="whychooseus-list">
-                            <div class="wm-fancy-title"> <h2>Why <span>Choose Us</span></h2> </div>
+                            <div class="wm-fancy-title"> <h2>Por que <span>Escolher a Clever Xm</span></h2> </div>
                             <ul class="row">
                                 <li class="col-md-4">
-                                    <span>209</span>
-                                    <h6>of our trainees have got a prestigious job</h6>
+                                    <span>95%</span>
+                                    <h6>dos nossos alunos obtiveram aprovação no vestibular com alta pontuação</h6>
                                 </li>
                                 <li class="col-md-4">
-                                    <span>91%</span>
-                                    <h6>students have established successful business</h6>
+                                    <span>89%</span>
+                                    <h6>dos alunos melhoraram suas notas no ENEM</h6>
                                 </li>
                                 <li class="col-md-4">
-                                    <span>35%</span>
-                                    <h6>have already earned their first million</h6>
+                                    <span>80%</span>
+                                    <h6>relataram avanços significativos no aprendizado de inglês</h6>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="wm-questions-studying">
-                            <img src="extra-images/ask-questoin-bg.png" alt="">
-                            <h3 class="wm-color">Questions about studying with us?</h3>
-                            <p>We have a team of student advisers & officers to answer any questions:</p>
-                            <a class="wm-banner-btn" href="#">ask us now</a>
+                            <img src="extra-images/ask-questoin-bg.png" alt="Perguntas sobre estudo">
+                            <h3 class="wm-color">Dúvidas sobre estudar conosco?</h3>
+                            <p>Nossa equipe de consultores e orientadores está pronta para responder a todas as suas perguntas:</p>
+                            <a class="wm-banner-btn" href="#">Pergunte agora</a>
                         </div>
                     </div>
 
@@ -256,6 +274,7 @@
             </div>
         </div>
         <!--// Main Section \\-->
+
 
         <!--// Main Section \\-->
         <div class="wm-main-section wm-learn-listing-full">
@@ -263,38 +282,42 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="wm-fancy-title"> <h2>You Can <span>Learn</span></h2> </div>
+                        <div class="wm-fancy-title"> <h2>Você Pode <span>Aprender</span></h2> </div>
                         <div class="wm-learn-listing">
                             <ul class="row">
                                 <li class="col-md-6">
-                                    <figure><a href="#"><img src="extra-images/learn-listing-1.png" alt=""></a>
+                                    <figure>
+                                        <a href="#"><img src="extra-images/learn-listing-1.png" alt="Pesquisa"></a>
                                         <figcaption>
-                                            <h2>Research</h2>
-                                            <a href="#" class="wm-banner-btn">Read More</a>
+                                            <h2>Pesquisa</h2>
+                                            <a href="#" class="wm-banner-btn">Saiba Mais</a>
                                         </figcaption>
                                     </figure>
                                 </li>
                                 <li class="col-md-6">
-                                    <figure><a href="#"><img src="extra-images/learn-listing-2.png" alt=""></a>
+                                    <figure>
+                                        <a href="#"><img src="extra-images/learn-listing-2.png" alt="Acadêmico"></a>
                                         <figcaption>
-                                            <h2>Academics</h2>
-                                            <a href="#" class="wm-banner-btn">Read More</a>
+                                            <h2>Acadêmico</h2>
+                                            <a href="#" class="wm-banner-btn">Saiba Mais</a>
                                         </figcaption>
                                     </figure>
                                 </li>
                                 <li class="col-md-6">
-                                    <figure><a href="#"><img src="extra-images/learn-listing-3.png" alt=""></a>
+                                    <figure>
+                                        <a href="#"><img src="extra-images/learn-listing-3.png" alt="Admissão"></a>
                                         <figcaption>
-                                            <h2>Admissions</h2>
-                                            <a href="#" class="wm-banner-btn">Read More</a>
+                                            <h2>Admissão</h2>
+                                            <a href="#" class="wm-banner-btn">Saiba Mais</a>
                                         </figcaption>
                                     </figure>
                                 </li>
                                 <li class="col-md-6">
-                                    <figure><a href="#"><img src="extra-images/learn-listing-4.png" alt=""></a>
+                                    <figure>
+                                        <a href="#"><img src="extra-images/learn-listing-4.png" alt="Vida Estudantil"></a>
                                         <figcaption>
-                                            <h2>Student Life</h2>
-                                            <a href="#" class="wm-banner-btn">Read More</a>
+                                            <h2>Vida Estudantil</h2>
+                                            <a href="#" class="wm-banner-btn">Saiba Mais</a>
                                         </figcaption>
                                     </figure>
                                 </li>
@@ -307,23 +330,25 @@
         </div>
         <!--// Main Section \\-->
 
+
+        <!--// Main Section \\-->
         <!--// Main Section \\-->
         <div class="wm-main-section wm-latestevents-full">
             <div class="container">
                 <div class="row">
 
                     <div class="col-md-9 wm-top-spacer">
-                        <h2 class="wm-simple-title">Our Latest Events</h2>
+                        <h2 class="wm-simple-title">Nossos Últimos Eventos</h2>
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="wm-event-latest-slider">
                                     <div class="wm-event-latest-layer">
-                                        <h6 class="wm-color">Enjoy the best experience for you with the choice of our campus - a truly international university campus in Barcelona.</h6>
-                                        <a href="#" class="wm-banner-btn">about us</a>
+                                        <h6 class="wm-color">Descubra como a Clever Xm pode transformar sua preparação para vestibulares e ENEM com métodos de estudo inovadores e flexíveis.</h6>
+                                        <a href="#" class="wm-banner-btn">Saiba Mais</a>
                                     </div>
                                     <div class="wm-event-latest-layer">
-                                        <h6 class="wm-color">Enjoy the best experience for you with the choice of our campus - a truly international university campus in Barcelona.</h6>
-                                        <a href="#" class="wm-banner-btn">about us</a>
+                                        <h6 class="wm-color">Aproveite nossos cursos online para aprimorar seu inglês e potencializar suas chances de sucesso em exames e no mercado de trabalho.</h6>
+                                        <a href="#" class="wm-banner-btn">Saiba Mais</a>
                                     </div>
                                 </div>
                             </div>
@@ -331,12 +356,12 @@
                                 <div class="wm-event wm-latest-event">
                                     <ul class="row">
                                         <li class="col-md-12">
-                                            <figure><a href="#"><img src="extra-images/latest-event-1.png" alt=""></a></figure>
+                                            <figure><a href="#"><img src="extra-images/latest-event-1.png" alt="Evento 1"></a></figure>
                                             <div class="wm-latest-event-text">
-                                                <h6><a href="#" class="wm-color">Out of This World: The Family Fun Day</a></h6>
-                                                <time datetime="2008-02-14 20:00">21/04/2016</time>
-                                                <p>Join us for outer-space themed games, prizes, science & talks about careers in the UK.</p>
-                                                <a href="#" class="wm-banner-btn">check event</a>
+                                                <h6><a href="#" class="wm-color">Transforme sua Preparação: Dicas e Estratégias Online</a></h6>
+                                                <time datetime="2024-04-21 20:00">21/04/2024</time>
+                                                <p>Participe de nossos webinars sobre como utilizar a plataforma Clever Xm para obter os melhores resultados em vestibulares e ENEM.</p>
+                                                <a href="#" class="wm-banner-btn">Ver Evento</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -346,12 +371,12 @@
                                 <div class="wm-event wm-latest-event">
                                     <ul class="row">
                                         <li class="col-md-12">
-                                            <figure><a href="#"><img src="extra-images/latest-event-2.png" alt=""></a></figure>
+                                            <figure><a href="#"><img src="extra-images/latest-event-2.png" alt="Evento 2"></a></figure>
                                             <div class="wm-latest-event-text">
-                                                <h6><a href="#" class="wm-color">Shakespeare at Balliol in those five acts</a></h6>
-                                                <time datetime="2008-02-14 20:00">19/04/2016</time>
-                                                <p>A.C. Bradley and J.C. Maxwell get down to serious criticism; another Balliol writer launches the.</p>
-                                                <a href="#" class="wm-banner-btn">check event</a>
+                                                <h6><a href="#" class="wm-color">Aprimorando o Inglês: Estratégias de Ensino Eficazes</a></h6>
+                                                <time datetime="2024-04-19 20:00">19/04/2024</time>
+                                                <p>Descubra como nossos cursos de inglês online podem acelerar seu aprendizado e prepará-lo para um futuro brilhante.</p>
+                                                <a href="#" class="wm-banner-btn">Ver Evento</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -364,15 +389,15 @@
                             <ul class="row">
                                 <li class="col-md-12">
                                     <span class="word-count">5</span>
-                                    <h6>th best University in Europe (Youth Inc. 2015 ranking)</h6>
+                                    <h6>Curso online mais recomendado para preparação para vestibulares e ENEM</h6>
                                 </li>
                                 <li class="col-md-12">
                                     <span class="word-count">68</span>
-                                    <h6>% International students especially from Asia, Africa & Europe</h6>
+                                    <h6>% de alunos satisfeitos com a flexibilidade e qualidade dos nossos cursos</h6>
                                 </li>
                                 <li class="col-md-12">
                                     <span class="word-count">91</span>
-                                    <h6>Student Nationalities</h6>
+                                    <h6>Países com alunos utilizando a Clever Xm</h6>
                                 </li>
                             </ul>
                         </div>
@@ -384,39 +409,58 @@
         <!--// Main Section \\-->
 
         <!--// Main Section \\-->
+
+
+        <!--// Main Section \\-->
+        <!--// Main Section \\-->
         <div class="wm-main-section wm-testimonial-full">
             <div class="container">
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="wm-fancy-title"> <h2>What <span>Clients Say</span></h2> <p>Don't take our word for it, see what our awesome clients say.</p> </div>
+                        <div class="wm-fancy-title">
+                            <h2>O que <span>Nossos Alunos Dizem</span></h2>
+                            <p>Veja o que nossos incríveis alunos têm a dizer.</p>
+                        </div>
                         <div class="wm-testimonial-slider">
                             <div class="wm-testimonial-slider-wrap">
-                                <p>I chose them because it gave me flexibility. I was working full-time at the same time I was studying, so the OU gave me that flexibility. Also my Dad, I’m Danish of origin.</p>
+                                <p>A Clever Xm foi fundamental para minha aprovação no vestibular. Os simulados e as estratégias de estudo fornecidas foram precisos e me ajudaram a entender melhor os conceitos, resultando em uma nota muito acima da média.</p>
                                 <figure>
-                                    <a href="#" class="wm-testimonial-thumb"><img src="extra-images/testimonial-thumb-1.png" alt=""></a>
-                                    <figcaption> <h5><a href="#">Priya E. Abraham</a></h5> <span>Paris, France</span> </figcaption>
+                                    <a href="#" class="wm-testimonial-thumb"><img src="extra-images/testimonial-thumb-1.png" alt="Depoimento 1"></a>
+                                    <figcaption>
+                                        <h5><a href="#">João Pedro Silva</a></h5>
+                                        <span>São Paulo, Brasil</span>
+                                    </figcaption>
                                 </figure>
                             </div>
                             <div class="wm-testimonial-slider-wrap">
-                                <p>After completing the MBA study, I had the opportunity to join one of the leading business schools in the UK in the role of faculty member and senior consultant. I suppose without the MBA it would have been difficult to make that career step. The biggest challenge in studying with them.</p>
+                                <p>Com a ajuda da Clever Xm, minha preparação para o ENEM foi muito mais eficaz. Os cursos de revisão e as dicas de técnicas de estudo me proporcionaram um desempenho excelente no exame, me garantindo uma vaga no curso dos meus sonhos.</p>
                                 <figure>
-                                    <a href="#" class="wm-testimonial-thumb"><img src="extra-images/testimonial-thumb-2.png" alt=""></a>
-                                    <figcaption> <h5><a href="#">Priya E. Abraham</a></h5> <span>Paris, France</span> </figcaption>
+                                    <a href="#" class="wm-testimonial-thumb"><img src="extra-images/testimonial-thumb-2.png" alt="Depoimento 2"></a>
+                                    <figcaption>
+                                        <h5><a href="#">Maria Clara Souza</a></h5>
+                                        <span>Rio de Janeiro, Brasil</span>
+                                    </figcaption>
                                 </figure>
                             </div>
                             <div class="wm-testimonial-slider-wrap">
-                                <p>I chose them because it gave me flexibility. I was working full-time at the same time I was studying, so the OU gave me that flexibility. Also my Dad, I’m Danish of origin.</p>
+                                <p>Eu sou muito grato à Clever Xm pelo suporte no aprendizado de inglês. As aulas e os recursos oferecidos foram essenciais para minha fluência. O curso de inglês realmente fez a diferença para minha carreira acadêmica e profissional.</p>
                                 <figure>
-                                    <a href="#" class="wm-testimonial-thumb"><img src="extra-images/testimonial-thumb-1.png" alt=""></a>
-                                    <figcaption> <h5><a href="#">Priya E. Abraham</a></h5> <span>Paris, France</span> </figcaption>
+                                    <a href="#" class="wm-testimonial-thumb"><img src="extra-images/testimonial-thumb-3.png" alt="Depoimento 3"></a>
+                                    <figcaption>
+                                        <h5><a href="#">Ana Beatriz Costa</a></h5>
+                                        <span>Belo Horizonte, Brasil</span>
+                                    </figcaption>
                                 </figure>
                             </div>
                             <div class="wm-testimonial-slider-wrap">
-                                <p>After completing the MBA study, I had the opportunity to join one of the leading business schools in the UK in the role of faculty member and senior consultant. I suppose without the MBA it would have been difficult to make that career step. The biggest challenge in studying with them.</p>
+                                <p>Os recursos e suporte oferecidos pela Clever Xm me ajudaram a alcançar meus objetivos acadêmicos com muito mais facilidade. A plataforma realmente facilita a preparação para exames e o aprendizado de novas habilidades.</p>
                                 <figure>
-                                    <a href="#" class="wm-testimonial-thumb"><img src="extra-images/testimonial-thumb-2.png" alt=""></a>
-                                    <figcaption> <h5><a href="#">Priya E. Abraham</a></h5> <span>Paris, France</span> </figcaption>
+                                    <a href="#" class="wm-testimonial-thumb"><img src="extra-images/testimonial-thumb-4.png" alt="Depoimento 4"></a>
+                                    <figcaption>
+                                        <h5><a href="#">Carlos Eduardo Lima</a></h5>
+                                        <span>Curitiba, Brasil</span>
+                                    </figcaption>
                                 </figure>
                             </div>
                         </div>
@@ -425,6 +469,8 @@
                 </div>
             </div>
         </div>
+        <!--// Main Section \\-->
+
         <!--// Main Section \\-->
 
 
@@ -435,64 +481,67 @@
                 <div class="row">
 
                     <div class="col-md-12">
-                        <div class="wm-fancy-title"> <h2>Blog <span>News</span></h2> <p>We bring you all the useful information of the University's Community</p> </div>
+                        <div class="wm-fancy-title">
+                            <h2>Blog <span>Notícias</span></h2>
+                            <p>Trouxemos para você todas as informações úteis sobre como a nossa plataforma pode transformar sua preparação para exames.</p>
+                        </div>
                         <div class="wm-news wm-news-grid">
                             <ul class="row">
                                 <li class="col-md-4">
                                     <figure>
-                                        <a href="#"><img src="extra-images/news-grid-1.png" alt=""></a>
+                                        <a href="#"><img src="extra-images/news-grid-1.png" alt="Notícia 1"></a>
                                         <figcaption class="wm-bgcolor">
-                                            <img src="extra-images/news-grid-thumb-1.png" alt="">
-                                            <h6>Posted by: <a href="#">Sam K. Harrington</a></h6>
+                                            <img src="extra-images/news-grid-thumb-1.png" alt="Thumbnail 1">
+                                            <h6>Postado por: <a href="#">Lucas Oliveira</a></h6>
                                         </figcaption>
                                     </figure>
                                     <div class="wm-newsgrid-text">
                                         <ul class="wm-post-options">
-                                            <li>7/4/2016</li>
-                                            <li><a href="#"><i class="fa fa-comments-o"></i> 12 comments</a></li>
-                                            <li><a href="#"><i class="wmicon-folder2"></i> admission</a></li>
+                                            <li>07/04/2024</li>
+                                            <li><a href="#"><i class="fa fa-comments-o"></i> 15 comentários</a></li>
+                                            <li><a href="#"><i class="wmicon-folder2"></i> vestibular</a></li>
                                         </ul>
-                                        <h5><a href="#" class="wm-color">Seven UK business schools make the Top 10</a></h5>
-                                        <p>The largest-ever QS Distance Online MBA Rankings have been released by higher and business education analysts QS.</p>
-                                        <a class="wm-banner-btn" href="#">read article</a>
+                                        <h5><a href="#" class="wm-color">Estudos mostram: usuários da nossa plataforma têm 30% mais chances de aprovação no vestibular</a></h5>
+                                        <p>Recentes pesquisas demonstram que estudantes que utilizaram nossa plataforma de preparação tiveram uma taxa de aprovação 30% superior em vestibulares. A plataforma oferece materiais exclusivos e simulados que preparam melhor os alunos para os desafios reais.</p>
+                                        <a class="wm-banner-btn" href="#">ler artigo</a>
                                     </div>
                                 </li>
                                 <li class="col-md-4">
                                     <figure>
-                                        <a href="#"><img src="extra-images/news-grid-2.png" alt=""></a>
+                                        <a href="#"><img src="extra-images/news-grid-2.png" alt="Notícia 2"></a>
                                         <figcaption class="wm-bgcolor">
-                                            <img src="extra-images/news-grid-thumb-2.png" alt="">
-                                            <h6>Posted by: <a href="#">Wanda R. Teixeira</a></h6>
+                                            <img src="extra-images/news-grid-thumb-2.png" alt="Thumbnail 2">
+                                            <h6>Postado por: Mariana Santos</h6>
                                         </figcaption>
                                     </figure>
                                     <div class="wm-newsgrid-text">
                                         <ul class="wm-post-options">
-                                            <li>6/4/2016</li>
-                                            <li><a href="#"><i class="fa fa-comments-o"></i> 21 comments</a></li>
-                                            <li><a href="#"><i class="wmicon-folder2"></i> business</a></li>
+                                            <li>06/04/2024</li>
+                                            <li><a href="#"><i class="fa fa-comments-o"></i> 22 comentários</a></li>
+                                            <li><a href="#"><i class="wmicon-folder2"></i> ENEM</a></li>
                                         </ul>
-                                        <h5><a href="#" class="wm-color">The University Business School centre of excellence</a></h5>
-                                        <p>The University has announced the launch of its first free online course as part.  These individuals or groups can more effectively.</p>
-                                        <a class="wm-banner-btn" href="#">read article</a>
+                                        <h5><a href="#" class="wm-color">Como nossa plataforma pode aumentar suas chances no ENEM</a></h5>
+                                        <p>Através de métodos comprovados e ferramentas interativas, nossa plataforma ajuda os alunos a entender e aplicar conceitos cruciais para o ENEM. Estudos indicam que usuários dedicados têm uma probabilidade 40% maior de alcançar notas superiores.</p>
+                                        <a class="wm-banner-btn" href="#">ler artigo</a>
                                     </div>
                                 </li>
                                 <li class="col-md-4">
                                     <figure>
-                                        <a href="#"><img src="extra-images/news-grid-3.png" alt=""></a>
+                                        <a href="#"><img src="extra-images/news-grid-3.png" alt="Notícia 3"></a>
                                         <figcaption class="wm-bgcolor">
-                                            <img src="extra-images/news-grid-thumb-3.png" alt="">
-                                            <h6>Posted by: <a href="#">Marvin P. Sanchez</a></h6>
+                                            <img src="extra-images/news-grid-thumb-3.png" alt="Thumbnail 3">
+                                            <h6>Postado por: Ana Costa</h6>
                                         </figcaption>
                                     </figure>
                                     <div class="wm-newsgrid-text">
                                         <ul class="wm-post-options">
-                                            <li>5/4/2016</li>
-                                            <li><a href="#"><i class="fa fa-comments-o"></i> 18 comments</a></li>
-                                            <li><a href="#"><i class="wmicon-folder2"></i> students</a></li>
+                                            <li>05/04/2024</li>
+                                            <li><a href="#"><i class="fa fa-comments-o"></i> 19 comentários</a></li>
+                                            <li><a href="#"><i class="wmicon-folder2"></i> sucesso acadêmico</a></li>
                                         </ul>
-                                        <h5><a href="#" class="wm-color">Our research could slash energy bills in Milton</a></h5>
-                                        <p>The University is developing the UK’s first community based website that will allow people in Milton Keynes.</p>
-                                        <a class="wm-banner-btn" href="#">read article</a>
+                                        <h5><a href="#" class="wm-color">Histórias de sucesso: Alunos que transformaram suas vidas com nossa plataforma</a></h5>
+                                        <p>Leia histórias inspiradoras de alunos que utilizaram nossa plataforma e alcançaram sucesso acadêmico notável. Desde o aumento das notas em exames até a conquista de bolsas de estudo, nossa plataforma tem sido uma ferramenta chave na realização de sonhos acadêmicos.</p>
+                                        <a class="wm-banner-btn" href="#">ler artigo</a>
                                     </div>
                                 </li>
                             </ul>
@@ -502,29 +551,31 @@
                 </div>
             </div>
         </div>
-        <!--// Main Section \\-->
+
 
         <!--// Main Section \\-->
-        <div class="wm-main-section">
-            <div class="container">
-                <div class="row">
 
-                    <div class="col-md-12">
-                        <div class="wm-simple-section-title wm-partners-title"> <h2>University <span>Partners</span></h2> </div>
-                        <div class="wm-partners-slider gallery">
-                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-1.png"> <img src="extra-images/university-partners-1.png" alt=""> </a> </div>
-                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-2.png"> <img src="extra-images/university-partners-2.png" alt=""> </a> </div>
-                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-3.png"> <img src="extra-images/university-partners-3.png" alt=""> </a> </div>
-                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-4.png"> <img src="extra-images/university-partners-4.png" alt=""> </a> </div>
-                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-5.png"> <img src="extra-images/university-partners-5.png" alt=""> </a> </div>
-                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-6.png"> <img src="extra-images/university-partners-6.png" alt=""> </a> </div>
-                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-1.png"> <img src="extra-images/university-partners-1.png" alt=""> </a> </div>
-                        </div>
-                    </div>
+        <!--// Main Section \\-->
+{{--        <div class="wm-main-section">--}}
+{{--            <div class="container">--}}
+{{--                <div class="row">--}}
 
-                </div>
-            </div>
-        </div>
+{{--                    <div class="col-md-12">--}}
+{{--                        <div class="wm-simple-section-title wm-partners-title"> <h2>University <span>Partners</span></h2> </div>--}}
+{{--                        <div class="wm-partners-slider gallery">--}}
+{{--                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-1.png"> <img src="extra-images/university-partners-1.png" alt=""> </a> </div>--}}
+{{--                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-2.png"> <img src="extra-images/university-partners-2.png" alt=""> </a> </div>--}}
+{{--                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-3.png"> <img src="extra-images/university-partners-3.png" alt=""> </a> </div>--}}
+{{--                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-4.png"> <img src="extra-images/university-partners-4.png" alt=""> </a> </div>--}}
+{{--                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-5.png"> <img src="extra-images/university-partners-5.png" alt=""> </a> </div>--}}
+{{--                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-6.png"> <img src="extra-images/university-partners-6.png" alt=""> </a> </div>--}}
+{{--                            <div class="wm-partners-layer"> <a title="" data-rel="prettyPhoto[gallery1]" href="extra-images/university-partners-1.png"> <img src="extra-images/university-partners-1.png" alt=""> </a> </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
         <!--// Main Section \\-->
 
         <!--// Main Section \\-->
@@ -538,8 +589,8 @@
 
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs">
-                                <li class="active"><a href="#home" aria-controls="home" data-toggle="tab">Contact Us</a></li>
-                                <li><a href="#profile" aria-controls="profile" data-toggle="tab">Information Details</a></li>
+                                <li class="active"><a href="#home" aria-controls="home" data-toggle="tab">Fale conosco</a></li>
+                                <li><a href="#profile" aria-controls="profile" data-toggle="tab">Detalhes</a></li>
                             </ul>
 
                             <!-- Tab panes -->
@@ -549,12 +600,12 @@
                                         <div class="col-md-4"> <div class="wm-map"> <div id="map"></div> </div> </div>
                                         <div class="col-md-8">
                                             <div class="wm-contact-form">
-                                                <span>Talk To Us Today</span>
+                                                <span>Contate-nos para mais informações</span>
                                                 <form>
                                                     <ul>
                                                         <li>
                                                             <i class="wmicon-black"></i>
-                                                            <input type="text" value="Name" onblur="if(this.value == '') { this.value ='Name'; }" onfocus="if(this.value =='Name') { this.value = ''; }">
+                                                            <input type="text" value="Nome" onblur="if(this.value == '') { this.value ='Nome'; }" onfocus="if(this.value =='Nome') { this.value = ''; }">
                                                         </li>
                                                         <li>
                                                             <i class="wmicon-symbol3"></i>
@@ -562,15 +613,18 @@
                                                         </li>
                                                         <li>
                                                             <i class="wmicon-technology4"></i>
-                                                            <input type="text" value="Phone" onblur="if(this.value == '') { this.value ='Phone'; }" onfocus="if(this.value =='Phone') { this.value = ''; }">
+                                                            <input type="text" value="Telefone" onblur="if(this.value == '') { this.value ='Telefone'; }" onfocus="if(this.value =='Telefone') { this.value = ''; }">
                                                         </li>
                                                         <li>
                                                             <i class="wmicon-web2"></i>
-                                                            <textarea placeholder="Message"></textarea>
+                                                            <textarea placeholder="Mensagem"></textarea>
                                                         </li>
-                                                        <li> <input type="submit" value="Send Message"> </li>
+                                                        <li>
+                                                            <input type="submit" value="Enviar Mensagem">
+                                                        </li>
                                                     </ul>
                                                 </form>
+
                                             </div>
                                         </div>
                                     </div>
