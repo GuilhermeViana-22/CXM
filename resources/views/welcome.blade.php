@@ -696,6 +696,7 @@
 </div>
 <!-- ModalSearch Box -->
     </body>
+<script src="{{ asset('site/js/sweetalert2.all.js') }}"></script>
 <script type="text/javascript" src="{{ asset('script/jquery.js') }}"></script>
 <script type="text/javascript" src="{{ asset('script/modernizr.js') }}"></script>
 <script type="text/javascript" src="{{ asset('script/bootstrap.min.js') }}"></script>

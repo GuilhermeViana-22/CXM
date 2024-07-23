@@ -6,7 +6,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="wm-language"> <ul> <li><a href="#">English</a></li> <li><a href="#">español</a></li> </ul> </div>
+                    <div class="wm-language"> <ul> <li><a href="#">English</a></li> <li><a href="#">Português</a></li> </ul> </div>
                     <ul class="wm-stripinfo">
                         <li><i class="wmicon-location"></i> 2925 Swick Hill Street, Charlotte, NC 28202</li>
                         <li><i class="wmicon-technology4"></i> +1 984-700-7129</li>
@@ -14,7 +14,7 @@
                     </ul>
                     <ul class="wm-adminuser-section">
                         <li>
-                            <a href="#" data-toggle="modal" data-target="#ModalLogin">login</a>
+                            <a onclick="irPara('{{route('login')}}')">login</a>
                         </li>
                         <li>
                             <a href="#">Contact</a>
@@ -33,7 +33,10 @@
     <div class="wm-main-header">
         <div class="container">
             <div class="row">
-                <div class="col-md-3"><a href="index-2.html" class="wm-logo"><img src="{{'images/logo-1.png'}}" alt=""></a></div>
+                <div class="col-md-3">
+                    <a href="index-2.html" class="wm-logo"><img src="{{ asset('/arquivos/imagens/logo.png') }}" alt="">
+                    </a>
+                </div>
                 <div class="col-md-9">
                     <!--// Navigation \\-->
                     <nav class="navbar navbar-default">
@@ -161,7 +164,7 @@
                         </div>
                     </nav>
                     <!--// Navigation \\-->
-                    <a href="#" class="wm-header-btn">get started</a>
+                    <a  onclick="irPara('{{route('login')}}')" class="wm-header-btn">get started</a>
                 </div>
             </div>
         </div>

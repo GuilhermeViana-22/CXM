@@ -359,6 +359,7 @@ address { font-style: italic; }
 .wm-logo {
     float: left;
     margin: 35px 0px 26px 0px;
+    max-width: 80% !important;
 }
 /* MainHeader */
 .wm-main-header {

@@ -23,7 +23,7 @@
         <div class="container">
             <div class="row">
                 <aside class="widget widget_contact_info col-md-3">
-                    <a href="index-2.html" class="wm-footer-logo"><img src="images/logo-1.png" alt=""></a>
+                    <a href="index-2.html" class="wm-logo"><img src="{{ asset('/arquivos/imagens/logo.png') }}" alt="">
                     <ul>
                         <li><i class="wm-color wmicon-pin"></i> 195 Cooks Mine Road Espanola, NM 87532</li>
                         <li><i class="wm-color wmicon-phone"></i> +1 505-753-5656 <br> +1 505-753-4437</li>
